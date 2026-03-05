@@ -663,7 +663,83 @@ p:last-child {
   color: var(--color-primary-400)
 }
 
-/* CARDS */
+/* SOCIAL AUTH */
+.social-auth {
+  margin-top: var(--space-8);
+  text-align: center;
+}
+
+.social-auth-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.social-auth-divider::before,
+.social-auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--surface-border);
+}
+
+.social-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  background: var(--surface-card);
+  border: 1.5px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background: var(--surface-secondary);
+  border-color: var(--color-primary-400);
+  transform: translateY(-2px);
+}
+
+.social-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-btn.google {
+  --brand-color: #DB4437;
+}
+
+.social-btn.github {
+  --brand-color: #333;
+}
+
+.social-btn.twitter {
+  --brand-color: #1DA1F2;
+}
+
+[data-theme="dark"] .social-btn.github {
+  --brand-color: #f1f5f9;
+}
+
+@media (max-width: 480px) {
+  .social-btns {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   background: var(--surface-card);
   border: 1px solid var(--surface-border);

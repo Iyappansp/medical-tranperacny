@@ -76,9 +76,33 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div class="tech-badge mb-4">Enterprise Solutions</div>
-            <h1 class="mb-4">Transcription Services</h1>
-            <p class="text-lg text-secondary" style="max-width: 600px;">Specialized medical transcription engineered for
-              clinical accuracy, HIPAA compliance, and rapid integration.</p>
+            <h1 class="mb-4 text-4xl lg:text-5xl font-bold leading-tight">Elite Medical Transcription Services</h1>
+            <p class="text-lg text-secondary mb-8" style="max-width: 600px;">
+              Accelerate your practice with our high-fidelity, HIPAA-compliant transcription engine.
+              We combine AI-driven efficiency with human expertise to deliver 99%+ accuracy
+              within guaranteed turnaround times.
+            </p>
+            <ul class="feature-list mb-10" style="max-width: 500px; border-top: 1px solid var(--surface-border)">
+              <li style="border-bottom: 1px solid var(--surface-border); padding: 12px 0">
+                <span class="check"
+                  style="background: var(--color-primary-100); color: var(--color-primary-700)">✓</span>
+                <span><strong>Instant Audio Processing:</strong> Upload and start transcribing in seconds.</span>
+              </li>
+              <li style="border-bottom: 1px solid var(--surface-border); padding: 12px 0">
+                <span class="check"
+                  style="background: var(--color-primary-100); color: var(--color-primary-700)">✓</span>
+                <span><strong>99.8% Accuracy:</strong> Multi-stage human-in-the-loop review process.</span>
+              </li>
+              <li style="border-bottom: 1px solid var(--surface-border); padding: 12px 0">
+                <span class="check"
+                  style="background: var(--color-primary-100); color: var(--color-primary-700)">✓</span>
+                <span><strong>HL7/FHIR Ready:</strong> Direct integration with Epic, Cerner, and more.</span>
+              </li>
+            </ul>
+            <div class="flex gap-4 flex-wrap">
+              <a href="signup.html" class="btn btn-primary btn-lg">Start Free Trial</a>
+              <a href="contact.html" class="btn btn-secondary btn-lg">Talk to Sales</a>
+            </div>
           </div>
           <div class="tech-img-container rounded-2xl shadow-2xl" data-animate>
             <img src="../assets/images/doctor_tablet_transcription_1772691136919.png"
@@ -160,14 +184,6 @@
           <h2 id="specialties-heading">Expertise Across Every Medical Specialty</h2>
           <p>Our team of 200+ transcriptionists covers all major medical specialties with dedicated specialists for each
             field.</p>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px">
-          {%for specialty in specialties%}
-          <div class="card" style="padding:16px;text-align:center" data-animate>
-            <div style="font-size:1.75rem;margin-bottom:8px">ICON</div>
-            <div class="font-ui text-sm font-semibold" style="color:var(--text-primary)">Specialty</div>
-          </div>
-          {%endfor%}
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px">
           <div class="card" style="padding:16px" data-animate>
