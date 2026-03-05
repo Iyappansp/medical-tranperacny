@@ -16,9 +16,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/dark-mode.css">
-  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -35,20 +35,20 @@
         </a>
         <div class="navbar-nav" role="list">
           <a href="index.html" class="nav-link active" role="listitem" aria-current="page">Home</a>
-          <a href="home-2.html" class="nav-link" role="listitem">Home 2</a>
-          <a href="services.html" class="nav-link" role="listitem">Services</a>
+          <a href="pages/home-2.html" class="nav-link" role="listitem">Home 2</a>
+          <a href="pages/services.html" class="nav-link" role="listitem">Services</a>
           <a href="index.html#security" class="nav-link" role="listitem">Security</a>
-          <a href="about.html" class="nav-link" role="listitem">About</a>
-          <a href="contact.html" class="nav-link" role="listitem">Contact</a>
-          <a href="dashboard.html" class="nav-link" role="listitem">Dashboard</a>
+          <a href="pages/about.html" class="nav-link" role="listitem">About</a>
+          <a href="pages/contact.html" class="nav-link" role="listitem">Contact</a>
+          <a href="pages/dashboard.html" class="nav-link" role="listitem">Dashboard</a>
         </div>
         <div class="navbar-actions">
           <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
           <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
             <span data-theme-icon>🌙</span>
           </button>
-          <a href="login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
-          <a href="signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
+          <a href="pages/login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
+          <a href="pages/signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
           <button class="mobile-menu-btn" data-mobile-menu-btn aria-label="Open menu" aria-expanded="false"
             aria-controls="mobile-nav">
             <span data-menu-icon>☰</span>
@@ -57,15 +57,15 @@
       </div>
       <div class="mobile-menu" id="mobile-nav" data-mobile-menu aria-label="Mobile navigation">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="home-2.html" class="nav-link">Home 2</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="security.html" class="nav-link">Security</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="pages/home-2.html" class="nav-link">Home 2</a>
+        <a href="pages/services.html" class="nav-link">Services</a>
+        <a href="pages/security.html" class="nav-link">Security</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+        <a href="pages/dashboard.html" class="nav-link">Dashboard</a>
         <div class="flex gap-2 mt-4">
-          <a href="login.html" class="btn btn-secondary flex-1" style="justify-content:center">Login</a>
-          <a href="signup.html" class="btn btn-primary flex-1" style="justify-content:center">Sign Up</a>
+          <a href="pages/login.html" class="btn btn-secondary flex-1" style="justify-content:center">Login</a>
+          <a href="pages/signup.html" class="btn btn-primary flex-1" style="justify-content:center">Sign Up</a>
         </div>
       </div>
     </nav>
@@ -91,8 +91,8 @@
               Seamlessly bridge the gap between patient care and structured data records.
             </p>
             <div class="flex gap-4 flex-wrap mb-12">
-              <a href="signup.html" class="btn btn-primary btn-lg px-8">Get Started Free</a>
-              <a href="services.html" class="btn btn-ghost btn-lg underline">Explore Technology</a>
+              <a href="pages/signup.html" class="btn btn-primary btn-lg px-8">Get Started Free</a>
+              <a href="pages/services.html" class="btn btn-ghost btn-lg underline">Explore Technology</a>
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div>
@@ -116,7 +116,7 @@
           <div class="relative animate-fade-in-up" style="animation-delay: 0.3s">
             <div class="glass p-6 rounded-2xl relative z-20">
               <div class="tech-img-container rounded-xl shadow-2xl">
-                <img src="../assets/images/medical_tech_ai_transcription_1772691095520.png"
+                <img src="assets/images/medical_tech_ai_transcription_1772691095520.png"
                   alt="AI Medical Transcription Visualization" class="w-full">
               </div>
               <div class="absolute -bottom-6 -left-6 glass p-4 rounded-xl shadow-xl hidden md:block"
@@ -168,41 +168,41 @@
             <h3>Clinical Notes</h3>
             <p>Detailed transcription of SOAP notes, discharge summaries, and patient consultations with proper medical
               terminology.</p>
-            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+            <a href="pages/services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
           </article>
           <article class="card card-interactive service-card" data-animate>
             <div class="service-icon" aria-hidden="true">🔬</div>
             <h3>Radiology Reports</h3>
             <p>Specialized transcription for radiologists covering CT, MRI, X-ray findings, and diagnostic imaging
               reports.</p>
-            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+            <a href="pages/services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
           </article>
           <article class="card card-interactive service-card" data-animate>
             <div class="service-icon" aria-hidden="true">⚕️</div>
             <h3>Surgical Notes</h3>
             <p>Precise operative reports, pre/post-operative notes, and procedure documentation for surgical
               specialties.</p>
-            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+            <a href="pages/services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
           </article>
           <article class="card card-interactive service-card" data-animate>
             <div class="service-icon" aria-hidden="true">🧠</div>
             <h3>Psychiatric Evaluations</h3>
             <p>Sensitive and accurate transcription of mental health assessments, therapy sessions, and psychiatric
               reports.</p>
-            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+            <a href="pages/services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
           </article>
           <article class="card card-interactive service-card" data-animate>
             <div class="service-icon" aria-hidden="true">💊</div>
             <h3>Pharmacology Notes</h3>
             <p>Drug interaction documentation, medication reconciliation, and pharmaceutical consultation transcripts.
             </p>
-            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+            <a href="pages/services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
           </article>
           <article class="card card-interactive service-card" data-animate>
             <div class="service-icon" aria-hidden="true">📋</div>
             <h3>EMR Integration</h3>
             <p>Seamless export to Epic, Cerner, Allscripts, and all major Electronic Medical Record systems.</p>
-            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+            <a href="pages/services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
           </article>
         </div>
       </div>
@@ -255,10 +255,10 @@
               <span class="badge badge-neutral">HIPAA Compliant</span>
               <span class="badge badge-neutral">Encryption</span>
             </div>
-            <a href="security.html" class="btn btn-primary">Learn more about our security →</a>
+            <a href="pages/security.html" class="btn btn-primary">Learn more about our security →</a>
           </div>
           <div class="tech-img-container rounded-2xl shadow-xl" data-animate>
-            <img src="../assets/images/medical_security_network_1772691112301.png"
+            <img src="assets/images/medical_security_network_1772691112301.png"
               alt="Secure Medical Data Network Visualization">
           </div>
         </div>
@@ -419,7 +419,7 @@
               <li><span class="check" aria-hidden="true">✓</span> HIPAA compliant</li>
               <li><span class="check" aria-hidden="true">✓</span> Email support</li>
             </ul>
-            <a href="dashboard.html" class="btn btn-secondary" style="width:100%;justify-content:center">Get Started</a>
+            <a href="pages/dashboard.html" class="btn btn-secondary" style="width:100%;justify-content:center">Get Started</a>
           </div>
           <div class="pricing-card featured" data-animate>
             <span class="pricing-badge">Most Popular</span>
@@ -453,7 +453,7 @@
               <li><span class="check" aria-hidden="true">✓</span> Custom EMR workflows</li>
               <li><span class="check" aria-hidden="true">✓</span> 24/7 dedicated support</li>
             </ul>
-            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Contact Sales</a>
+            <a href="pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Contact Sales</a>
           </div>
         </div>
       </div>
@@ -529,8 +529,8 @@
         <h2 id="cta-heading">Ready to Streamline Your Documentation?</h2>
         <p>Join 500+ healthcare providers who save hours every week with MedTranscribe.</p>
         <div class="flex gap-4 justify-center flex-wrap">
-          <a href="dashboard.html" class="btn btn-white btn-lg">Start Free Trial</a>
-          <a href="contact.html" class="btn btn-outline-white btn-lg">Talk to Sales</a>
+          <a href="pages/dashboard.html" class="btn btn-white btn-lg">Start Free Trial</a>
+          <a href="pages/contact.html" class="btn btn-outline-white btn-lg">Talk to Sales</a>
         </div>
       </div>
     </section>
@@ -559,19 +559,19 @@
         <nav aria-label="Services footer navigation">
           <div class="footer-title">Services</div>
           <div class="footer-links">
-            <a href="services.html" class="footer-link">Clinical Notes</a>
-            <a href="services.html" class="footer-link">Radiology Reports</a>
-            <a href="services.html" class="footer-link">Surgical Notes</a>
-            <a href="services.html" class="footer-link">EMR Integration</a>
-            <a href="services.html" class="footer-link">Enterprise</a>
+            <a href="pages/services.html" class="footer-link">Clinical Notes</a>
+            <a href="pages/services.html" class="footer-link">Radiology Reports</a>
+            <a href="pages/services.html" class="footer-link">Surgical Notes</a>
+            <a href="pages/services.html" class="footer-link">EMR Integration</a>
+            <a href="pages/services.html" class="footer-link">Enterprise</a>
           </div>
         </nav>
         <nav aria-label="Company footer navigation">
           <div class="footer-title">Company</div>
           <div class="footer-links">
-            <a href="about.html" class="footer-link">About Us</a>
-            <a href="about.html#team" class="footer-link">Our Team</a>
-            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="pages/about.html" class="footer-link">About Us</a>
+            <a href="pages/about.html#team" class="footer-link">Our Team</a>
+            <a href="pages/contact.html" class="footer-link">Contact</a>
             <a href="#" class="footer-link">Careers</a>
             <a href="#" class="footer-link">Blog</a>
           </div>
@@ -599,7 +599,7 @@
     style="position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--color-primary-700);color:white;border:none;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s;z-index:500;cursor:pointer"
     title="Back to top">↑</button>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
