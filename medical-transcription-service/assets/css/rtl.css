@@ -1,0 +1,31 @@
+/* rtl.css — Right-to-Left layout support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+[dir="rtl"] .navbar-inner { flex-direction: row-reverse; }
+[dir="rtl"] .navbar-nav { flex-direction: row-reverse; }
+[dir="rtl"] .navbar-actions { flex-direction: row-reverse; }
+[dir="rtl"] .hero-content { direction: rtl; }
+[dir="rtl"] .feature-list li { flex-direction: row-reverse; }
+[dir="rtl"] .contact-info-item { flex-direction: row-reverse; }
+[dir="rtl"] .value-item { flex-direction: row-reverse; }
+[dir="rtl"] .security-card { flex-direction: row-reverse; }
+[dir="rtl"] .testimonial-author { flex-direction: row-reverse; }
+[dir="rtl"] .footer-grid { direction: rtl; }
+[dir="rtl"] .footer-links { align-items: flex-end; }
+[dir="rtl"] .breadcrumb { flex-direction: row-reverse; }
+[dir="rtl"] .form-label { text-align: right; }
+[dir="rtl"] .form-error { flex-direction: row-reverse; }
+[dir="rtl"] .alert { flex-direction: row-reverse; }
+[dir="rtl"] .badge { flex-direction: row-reverse; }
+[dir="rtl"] .btn { flex-direction: row-reverse; }
+[dir="rtl"] .dashboard-sidebar { border-right: none; border-left: 1px solid var(--surface-border); }
+[dir="rtl"] .dashboard-content { margin-left: 0; margin-right: 260px; }
+[dir="rtl"] .mobile-menu .nav-link { text-align: right; }
+[dir="rtl"] .hero-stats { flex-direction: row-reverse; }
+[dir="rtl"] .trust-logos { flex-direction: row-reverse; }
+[dir="rtl"] .faq-btn { flex-direction: row-reverse; }
+[dir="rtl"] .navbar-title { text-align: right; }
+[dir="rtl"] .upload-zone { direction: rtl; }
+[dir="rtl"] .data-table th, [dir="rtl"] .data-table td { text-align: right; }

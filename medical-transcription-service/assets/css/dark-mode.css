@@ -1,0 +1,20 @@
+/* dark-mode.css — Additional dark mode overrides */
+[data-theme="dark"] .hero-eyebrow { background: rgba(59,130,246,0.15); color: #93c5fd; }
+[data-theme="dark"] .card-interactive:hover { border-color: rgba(59,130,246,0.3); }
+[data-theme="dark"] .faq-item.open .faq-icon { background: rgba(59,130,246,0.2); }
+[data-theme="dark"] .step-number { box-shadow: 0 0 0 4px rgba(59,130,246,0.15); }
+[data-theme="dark"] .pricing-card.featured { background: linear-gradient(135deg,#1e3a8a,#1d4ed8); }
+[data-theme="dark"] .trust-logo:hover { color: #93c5fd; }
+[data-theme="dark"] .team-avatar { box-shadow: 0 0 0 3px rgba(59,130,246,0.2); }
+[data-theme="dark"] .alert-success { border-color: rgba(22,163,74,0.3); }
+[data-theme="dark"] .alert-error   { border-color: rgba(220,38,38,0.3); }
+[data-theme="dark"] .alert-info    { border-color: rgba(2,132,199,0.3); }
+[data-theme="dark"] .alert-warning { border-color: rgba(217,119,6,0.3); }
+[data-theme="dark"] .form-input, [data-theme="dark"] .form-select, [data-theme="dark"] .form-textarea { color: #f1f5f9; }
+[data-theme="dark"] .dashboard-sidebar { background: #0f172a; border-right: 1px solid #334155; }
+[data-theme="dark"] .upload-zone { background: rgba(30,58,138,0.1); border-color: #334155; }
+[data-theme="dark"] .upload-zone:hover, [data-theme="dark"] .upload-zone.dragover { border-color: #2563eb; background: rgba(30,58,138,0.2); }
+[data-theme="dark"] .data-table thead tr { background: #1e293b; }
+[data-theme="dark"] .data-table tbody tr:hover { background: rgba(255,255,255,0.03); }
+[data-theme="dark"] .data-table { border-color: #334155; }
+[data-theme="dark"] .data-table th, [data-theme="dark"] .data-table td { border-color: #334155; }

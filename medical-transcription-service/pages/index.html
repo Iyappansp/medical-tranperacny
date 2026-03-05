@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="MedTranscribe — HIPAA-compliant medical transcription services for healthcare professionals. Upload audio, get accurate transcripts in 24 hours.">
+  <meta name="keywords" content="medical transcription, HIPAA, healthcare, audio transcription, clinical notes, EMR">
+  <meta property="og:title" content="MedTranscribe — Medical Transcription Services">
+  <meta property="og:description" content="HIPAA-compliant medical transcription. Accurate. Fast. Secure.">
+  <meta property="og:type" content="website">
+  <title>MedTranscribe — Medical Transcription Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR -->
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="index.html" class="navbar-brand" aria-label="MedTranscribe Home">
+          <div class="navbar-logo" aria-hidden="true">MT</div>
+          <div class="navbar-title">MedTranscribe<span>Medical Transcription</span></div>
+        </a>
+        <div class="navbar-nav" role="list">
+          <a href="index.html" class="nav-link active" role="listitem" aria-current="page">Home</a>
+          <a href="home-2.html" class="nav-link" role="listitem">Home 2</a>
+          <a href="services.html" class="nav-link" role="listitem">Services</a>
+          <a href="index.html#security" class="nav-link" role="listitem">Security</a>
+          <a href="about.html" class="nav-link" role="listitem">About</a>
+          <a href="contact.html" class="nav-link" role="listitem">Contact</a>
+          <a href="dashboard.html" class="nav-link" role="listitem">Dashboard</a>
+        </div>
+        <div class="navbar-actions">
+          <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+            <span data-theme-icon>🌙</span>
+          </button>
+          <a href="login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
+          <a href="signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
+          <button class="mobile-menu-btn" data-mobile-menu-btn aria-label="Open menu" aria-expanded="false"
+            aria-controls="mobile-nav">
+            <span data-menu-icon>☰</span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-nav" data-mobile-menu aria-label="Mobile navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="security.html" class="nav-link">Security</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="flex gap-2 mt-4">
+          <a href="login.html" class="btn btn-secondary flex-1" style="justify-content:center">Login</a>
+          <a href="signup.html" class="btn btn-primary flex-1" style="justify-content:center">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero relative overflow-hidden flex items-center"
+      style="min-height: 85vh; background: var(--surface-bg); padding-top: 100px;" aria-labelledby="hero-heading">
+      <div class="absolute inset-0 opacity-10 pointer-events-none"
+        style="background-image: radial-gradient(var(--color-primary-400) 1px, transparent 1px); background-size: 32px 32px;">
+      </div>
+      <div class="container relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="animate-fade-in-up">
+            <div class="tech-badge mb-4">🔒 Enterprise Grade Security</div>
+            <h1 id="hero-heading" class="mb-6" style="line-height:1.1">
+              Precision <span class="text-primary-color">Medical Transcription</span> <br>Engineered for Excellence
+            </h1>
+            <p class="text-lg mb-8" style="max-width: 540px;">
+              Accelerate your clinical documentation with AI-enhanced, HIPAA-compliant transcription.
+              Seamlessly bridge the gap between patient care and structured data records.
+            </p>
+            <div class="flex gap-4 flex-wrap mb-12">
+              <a href="signup.html" class="btn btn-primary btn-lg px-8">Get Started Free</a>
+              <a href="services.html" class="btn btn-ghost btn-lg underline">Explore Technology</a>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+              <div>
+                <div class="text-2xl font-bold text-primary-color">99.8%</div>
+                <div class="text-xs uppercase tracking-widest text-muted">Accuracy</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary-color">24hr</div>
+                <div class="text-xs uppercase tracking-widest text-muted">Turnaround</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary-color">10k+</div>
+                <div class="text-xs uppercase tracking-widest text-muted">Providers</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary-color">AES</div>
+                <div class="text-xs uppercase tracking-widest text-muted">Encryption</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative animate-fade-in-up" style="animation-delay: 0.3s">
+            <div class="glass p-6 rounded-2xl relative z-20">
+              <div class="tech-img-container rounded-xl shadow-2xl">
+                <img src="../assets/images/medical_tech_ai_transcription_1772691095520.png"
+                  alt="AI Medical Transcription Visualization" class="w-full">
+              </div>
+              <div class="absolute -bottom-6 -left-6 glass p-4 rounded-xl shadow-xl hidden md:block"
+                style="width: 200px;">
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-2 h-2 rounded-full bg-success animate-pulse"></div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider">System Live</span>
+                </div>
+                <div class="h-1 bg-surface-border rounded-full overflow-hidden">
+                  <div class="h-full bg-primary-color" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Decorative elements -->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary-400 opacity-5 blur-[120px] rounded-full pointer-events-none">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar" role="complementary" aria-label="Trusted by healthcare organizations">
+      <div class="container">
+        <div class="trust-label">Trusted by leading healthcare organizations</div>
+        <div class="trust-logos">
+          <span class="trust-logo">Mayo Clinic Network</span>
+          <span class="trust-logo">Johns Hopkins Affiliated</span>
+          <span class="trust-logo">Cleveland Clinic</span>
+          <span class="trust-logo">Kaiser Permanente</span>
+          <span class="trust-logo">HCA Healthcare</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Our Services</span>
+          <h2 id="services-heading">Transcription for Every Medical Setting</h2>
+          <p>From solo practitioners to large hospital systems, we provide tailored transcription solutions with
+            guaranteed accuracy.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+          <article class="card card-interactive service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">🏥</div>
+            <h3>Clinical Notes</h3>
+            <p>Detailed transcription of SOAP notes, discharge summaries, and patient consultations with proper medical
+              terminology.</p>
+            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+          </article>
+          <article class="card card-interactive service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">🔬</div>
+            <h3>Radiology Reports</h3>
+            <p>Specialized transcription for radiologists covering CT, MRI, X-ray findings, and diagnostic imaging
+              reports.</p>
+            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+          </article>
+          <article class="card card-interactive service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">⚕️</div>
+            <h3>Surgical Notes</h3>
+            <p>Precise operative reports, pre/post-operative notes, and procedure documentation for surgical
+              specialties.</p>
+            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+          </article>
+          <article class="card card-interactive service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">🧠</div>
+            <h3>Psychiatric Evaluations</h3>
+            <p>Sensitive and accurate transcription of mental health assessments, therapy sessions, and psychiatric
+              reports.</p>
+            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+          </article>
+          <article class="card card-interactive service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">💊</div>
+            <h3>Pharmacology Notes</h3>
+            <p>Drug interaction documentation, medication reconciliation, and pharmaceutical consultation transcripts.
+            </p>
+            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+          </article>
+          <article class="card card-interactive service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">📋</div>
+            <h3>EMR Integration</h3>
+            <p>Seamless export to Epic, Cerner, Allscripts, and all major Electronic Medical Record systems.</p>
+            <a href="services.html" class="btn btn-ghost btn-sm" style="margin-top:16px;padding-left:0">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" style="background:var(--surface-secondary)" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">How It Works</span>
+          <h2 id="how-heading">Simple 4-Step Process</h2>
+          <p>Getting your transcripts is straightforward. Our streamlined workflow delivers results with minimal effort
+            from you.</p>
+        </div>
+        <div class="steps" role="list">
+          <div class="step-card" role="listitem" data-animate>
+            <div class="step-number" aria-label="Step 1">1</div>
+            <h4>Upload Audio</h4>
+            <p>Drag and drop MP3, WAV, or M4A files into your secure client portal.</p>
+          </div>
+          <div class="step-card" role="listitem" data-animate>
+            <div class="step-number" aria-label="Step 2">2</div>
+            <h4>We Transcribe</h4>
+            <p>Our specialist team processes your audio with AI-assisted accuracy checking.</p>
+          </div>
+          <div class="step-card" role="listitem" data-animate>
+            <div class="step-number" aria-label="Step 3">3</div>
+            <h4>Quality Review</h4>
+            <p>A credentialed medical transcriptionist reviews every document before delivery.</p>
+          </div>
+          <div class="step-card" role="listitem" data-animate>
+            <div class="step-number" aria-label="Step 4">4</div>
+            <h4>Download &amp; Integrate</h4>
+            <p>Receive formatted text files ready for your EMR system within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECURITY SECTION -->
+    <section class="section" aria-labelledby="security-heading">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div data-animate>
+            <h2 id="security-heading">Military-Grade Security</h2>
+            <p class="mb-6">Your data security is our top priority. We use AES-256 encryption at rest and in transit,
+              ensuring your patient information remains confidential and HIPAA-compliant.</p>
+            <div class="flex flex-wrap gap-4 mb-8">
+              <span class="badge badge-neutral">SOC 2 Type II</span>
+              <span class="badge badge-neutral">HIPAA Compliant</span>
+              <span class="badge badge-neutral">Encryption</span>
+            </div>
+            <a href="security.html" class="btn btn-primary">Learn more about our security →</a>
+          </div>
+          <div class="tech-img-container rounded-2xl shadow-xl" data-animate>
+            <img src="../assets/images/medical_security_network_1772691112301.png"
+              alt="Secure Medical Data Network Visualization">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-band" role="region" aria-label="Service statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-animate>
+            <strong><span data-counter="99.8" data-counter-suffix="%">99.8%</span></strong>
+            <span>Transcription Accuracy</span>
+          </div>
+          <div class="stat-item" data-animate>
+            <strong><span data-counter="24" data-counter-suffix="hr">24hr</span></strong>
+            <span>Average Turnaround</span>
+          </div>
+          <div class="stat-item" data-animate>
+            <strong><span data-counter="50000" data-counter-suffix="+">50K+</span></strong>
+            <span>Documents Delivered</span>
+          </div>
+          <div class="stat-item" data-animate>
+            <strong>100%</strong>
+            <span>HIPAA Compliant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECURITY SECTION -->
+    <section class="section" id="security" aria-labelledby="security-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Security &amp; Compliance</span>
+          <h2 id="security-heading">Enterprise-Grade Healthcare Security</h2>
+          <p>Your patients' data is protected by the same standards used by the world's leading healthcare institutions.
+          </p>
+        </div>
+        <div class="security-grid">
+          <div class="security-card" data-animate>
+            <div class="security-icon-wrap" aria-hidden="true">🔐</div>
+            <div>
+              <h4>HIPAA Compliant</h4>
+              <p>Full compliance with all HIPAA privacy and security rules. Business Associate Agreements available for
+                all clients.</p>
+            </div>
+          </div>
+          <div class="security-card" data-animate>
+            <div class="security-icon-wrap" aria-hidden="true">🛡️</div>
+            <div>
+              <h4>256-bit AES Encryption</h4>
+              <p>All files encrypted at rest and in transit using AES-256. TLS 1.3 for all data transfers.</p>
+            </div>
+          </div>
+          <div class="security-card" data-animate>
+            <div class="security-icon-wrap" aria-hidden="true">🔑</div>
+            <div>
+              <h4>Multi-Factor Authentication</h4>
+              <p>MFA required for all client portal access. Role-based access control for enterprise accounts.</p>
+            </div>
+          </div>
+          <div class="security-card" data-animate>
+            <div class="security-icon-wrap" aria-hidden="true">📋</div>
+            <div>
+              <h4>SOC 2 Type II Certified</h4>
+              <p>Annual third-party audits verify our security, availability, and confidentiality controls.</p>
+            </div>
+          </div>
+          <div class="security-card" data-animate>
+            <div class="security-icon-wrap" aria-hidden="true">🏦</div>
+            <div>
+              <h4>US-Based Servers</h4>
+              <p>All data stored exclusively on HIPAA-compliant servers located within the United States.</p>
+            </div>
+          </div>
+          <div class="security-card" data-animate>
+            <div class="security-icon-wrap" aria-hidden="true">🗑️</div>
+            <div>
+              <h4>Auto-Deletion Policy</h4>
+              <p>Audio files automatically deleted after transcription. Transcripts purged per your data retention
+                policy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" style="background:var(--surface-secondary)" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Testimonials</span>
+          <h2 id="testimonials-heading">Trusted by Healthcare Professionals</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+          <blockquote class="testimonial-card" data-animate>
+            <div class="star-rating" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">"MedTranscribe has cut our documentation time in half. The accuracy with
+              cardiology terminology is remarkable. We've completely eliminated transcription backlogs."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SJ</div>
+              <div>
+                <div class="testimonial-name">Dr. Sarah Johnson</div>
+                <div class="testimonial-role">Cardiologist, St. Mary's Medical Center</div>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial-card" data-animate>
+            <div class="star-rating" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">"The HIPAA compliance gave us confidence to switch from our in-house solution.
+              Turnaround is consistently under 12 hours, and the EMR integration is flawless."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:var(--color-success)" aria-hidden="true">MR</div>
+              <div>
+                <div class="testimonial-name">Dr. Michael Rodriguez</div>
+                <div class="testimonial-role">Chief Medical Officer, Valley Health</div>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial-card" data-animate>
+            <div class="star-rating" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">"Radiology reports with precise anatomical terminology, formatted exactly how
+              we need them. The quality review process is evident in every transcript."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:#7c3aed" aria-hidden="true">AP</div>
+              <div>
+                <div class="testimonial-name">Dr. Aisha Patel</div>
+                <div class="testimonial-role">Radiologist, Regional Imaging Center</div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Pricing</span>
+          <h2 id="pricing-heading">Transparent, Simple Pricing</h2>
+          <p>No hidden fees. Choose the plan that fits your practice volume.</p>
+        </div>
+        <div
+          style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;max-width:900px;margin-inline:auto">
+          <div class="pricing-card" data-animate>
+            <h3 class="font-ui font-bold" style="margin-bottom:8px">Starter</h3>
+            <p class="pricing-desc text-sm">For solo practitioners</p>
+            <div class="pricing-price" style="margin:20px 0">
+              <strong><span class="currency">$</span>0.95</strong>
+              <span class="period"> / audio minute</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check" aria-hidden="true">✓</span> Up to 100 min/month</li>
+              <li><span class="check" aria-hidden="true">✓</span> 24-hour turnaround</li>
+              <li><span class="check" aria-hidden="true">✓</span> Client portal access</li>
+              <li><span class="check" aria-hidden="true">✓</span> HIPAA compliant</li>
+              <li><span class="check" aria-hidden="true">✓</span> Email support</li>
+            </ul>
+            <a href="dashboard.html" class="btn btn-secondary" style="width:100%;justify-content:center">Get Started</a>
+          </div>
+          <div class="pricing-card featured" data-animate>
+            <span class="pricing-badge">Most Popular</span>
+            <h3 class="font-ui font-bold" style="margin-bottom:8px;color:white">Professional</h3>
+            <p class="pricing-desc text-sm">For small-to-mid practices</p>
+            <div class="pricing-price" style="margin:20px 0">
+              <strong><span class="currency">$</span>0.75</strong>
+              <span class="period" style="color:rgba(255,255,255,0.7)"> / audio minute</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check" aria-hidden="true">✓</span> Up to 500 min/month</li>
+              <li><span class="check" aria-hidden="true">✓</span> 12-hour turnaround</li>
+              <li><span class="check" aria-hidden="true">✓</span> EMR integration</li>
+              <li><span class="check" aria-hidden="true">✓</span> Priority review</li>
+              <li><span class="check" aria-hidden="true">✓</span> Phone &amp; email support</li>
+            </ul>
+            <a href="dashboard.html" class="btn btn-white"
+              style="width:100%;justify-content:center;background:white;color:var(--color-primary-700);border:none;font-weight:700">Start
+              Free Trial</a>
+          </div>
+          <div class="pricing-card" data-animate>
+            <h3 class="font-ui font-bold" style="margin-bottom:8px">Enterprise</h3>
+            <p class="pricing-desc text-sm">For hospitals &amp; health systems</p>
+            <div class="pricing-price" style="margin:20px 0">
+              <strong style="font-size:1.5rem">Custom</strong>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="check" aria-hidden="true">✓</span> Unlimited minutes</li>
+              <li><span class="check" aria-hidden="true">✓</span> 4-hour turnaround SLA</li>
+              <li><span class="check" aria-hidden="true">✓</span> Dedicated team</li>
+              <li><span class="check" aria-hidden="true">✓</span> Custom EMR workflows</li>
+              <li><span class="check" aria-hidden="true">✓</span> 24/7 dedicated support</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background:var(--surface-secondary)" aria-labelledby="faq-heading">
+      <div class="container" style="max-width:780px">
+        <div class="section-header">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </div>
+        <div role="list">
+          <div class="faq-item" data-faq-item role="listitem">
+            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-1">
+              Is MedTranscribe HIPAA compliant?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-1" role="region">
+              <p>Yes, fully. We sign a Business Associate Agreement (BAA) with every client, maintain SOC 2 Type II
+                certification, and our entire infrastructure is hosted on HIPAA-compliant servers. All staff undergo
+                annual HIPAA training and sign confidentiality agreements.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-faq-item role="listitem">
+            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-2">
+              What audio formats do you accept?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-2" role="region">
+              <p>We accept MP3, WAV, M4A, AAC, FLAC, OGG, and WMA files up to 200 MB per upload. For larger files,
+                contact us about our FTP or secure API upload options.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-faq-item role="listitem">
+            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-3">
+              How is turnaround time measured?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-3" role="region">
+              <p>Turnaround begins when your file is successfully uploaded. Standard is 24 hours, Professional is 12
+                hours, and Enterprise clients have a 4-hour SLA. We guarantee these times or provide a credit.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-faq-item role="listitem">
+            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-4">
+              Can I integrate transcripts into my EMR?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-4" role="region">
+              <p>Absolutely. We support direct integration with Epic, Cerner, Allscripts, Meditech, athenaHealth, and
+                most major EMR platforms via HL7/FHIR. Our team can assist with custom integrations for proprietary
+                systems.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-faq-item role="listitem">
+            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-5">
+              What is your accuracy guarantee?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-5" role="region">
+              <p>We guarantee 99%+ accuracy on all transcripts. If any document falls below this threshold, we'll
+                re-transcribe it at no charge. Our human quality reviewers verify every file before delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to Streamline Your Documentation?</h2>
+        <p>Join 500+ healthcare providers who save hours every week with MedTranscribe.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="dashboard.html" class="btn btn-white btn-lg">Start Free Trial</a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Talk to Sales</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" aria-label="MedTranscribe Home">
+            <div class="navbar-logo">MT</div>
+            <div class="navbar-title" style="color:white">MedTranscribe<span style="color:#94a3b8">Medical
+                Transcription</span></div>
+          </a>
+          <p>HIPAA-compliant medical transcription services trusted by 500+ healthcare providers across the United
+            States.</p>
+          <div class="footer-badges" aria-label="Certifications">
+            <span class="footer-badge">HIPAA</span>
+            <span class="footer-badge">SOC 2</span>
+            <span class="footer-badge">HL7</span>
+            <span class="footer-badge">FHIR</span>
+          </div>
+        </div>
+        <nav aria-label="Services footer navigation">
+          <div class="footer-title">Services</div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Clinical Notes</a>
+            <a href="services.html" class="footer-link">Radiology Reports</a>
+            <a href="services.html" class="footer-link">Surgical Notes</a>
+            <a href="services.html" class="footer-link">EMR Integration</a>
+            <a href="services.html" class="footer-link">Enterprise</a>
+          </div>
+        </nav>
+        <nav aria-label="Company footer navigation">
+          <div class="footer-title">Company</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="about.html#team" class="footer-link">Our Team</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Blog</a>
+          </div>
+        </nav>
+        <nav aria-label="Legal footer navigation">
+          <div class="footer-title">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">HIPAA Policy</a>
+            <a href="#" class="footer-link">BAA Template</a>
+            <a href="#" class="footer-link">Accessibility</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 MedTranscribe Inc. All rights reserved.</span>
+        <span>🏥 HIPAA Compliant | 🔒 SOC 2 Certified | 🇺🇸 US-Based Servers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button data-back-to-top aria-label="Back to top"
+    style="position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--color-primary-700);color:white;border:none;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s;z-index:500;cursor:pointer"
+    title="Back to top">↑</button>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
