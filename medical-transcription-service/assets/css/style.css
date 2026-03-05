@@ -382,6 +382,16 @@ p:last-child {
   display: none
 }
 
+.hide-mobile {
+  display: none !important;
+}
+
+@media(min-width:1024px) {
+  .hide-mobile {
+    display: inline-flex !important;
+  }
+}
+
 /* NAVBAR */
 .navbar {
   position: fixed;
