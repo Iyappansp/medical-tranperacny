@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="MedTranscribe Gallery — Explore our facilities, technology, and team behind our premium medical transcription services.">
+  <title>Gallery — MedTranscribe Medical Transcription</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      cursor: zoom-in;
+      background: var(--surface-secondary);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-tag {
+      background: var(--color-primary-500);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      width: fit-content;
+      margin-bottom: 8px;
+    }
+
+    .gallery-title {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .gallery-desc {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.875rem;
+      margin-top: 4px;
+    }
+
+    /* RTL specific adjustments for gallery if needed */
+    [dir="rtl"] .gallery-tag {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="../index.html" class="navbar-brand" aria-label="MedTranscribe Home">
+          <div class="navbar-logo">MT</div>
+          <div class="navbar-title">MedTranscribe<span>Medical Transcription</span></div>
+        </a>
+        <div class="navbar-nav" role="list">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="security.html" class="nav-link">Security</a>
+          <a href="gallery.html" class="nav-link active" aria-current="page">Gallery</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="navbar-actions">
+          <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span
+              data-theme-icon>🌙</span></button>
+          <a href="dashboard.html" class="btn btn-ghost btn-sm hide-mobile">Dashboard</a>
+          <a href="login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
+          <a href="signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
+          <button class="mobile-menu-btn" data-mobile-menu-btn aria-label="Open menu" aria-expanded="false"
+            aria-controls="mobile-nav"><span data-menu-icon>☰</span></button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-nav" data-mobile-menu>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="security.html" class="nav-link">Security</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="flex gap-2 mt-4">
+          <a href="login.html" class="btn btn-secondary flex-1" style="justify-content:center">Login</a>
+          <a href="signup.html" class="btn btn-primary flex-1" style="justify-content:center">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="page-header">
+      <div class="container page-header-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><span aria-hidden="true">›</span><span aria-current="page">Gallery</span>
+        </nav>
+        <h1>MedTranscribe Gallery</h1>
+        <p>A glimpse into our world — the people, the technology, and the precision that defines our service.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Visual Tour</span>
+          <h2 id="gallery-heading">Our Operations & Technology</h2>
+          <p>Behind every transcript is a sophisticated ecosystem of AI-driven technology and expert human oversight.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-animate>
+            <img src="../assets/images/medical_transcription_team_1772732209534.png" alt="Medical Transcription Team">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Operations</span>
+              <h3 class="gallery-title">Expert Transcription Team</h3>
+              <p class="gallery-desc">Our dedicated team of professionals ensuring 99.8% accuracy.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-animate>
+            <img src="../assets/images/ai_medical_transcription_interface_1772732244108.png" alt="AI Interface">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Technology</span>
+              <h3 class="gallery-title">AI-Powered Processing</h3>
+              <p class="gallery-desc">Advanced NLP models at the core of our transcription engine.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-animate>
+            <img src="../assets/images/medical_data_security_visual_1772732226818.png" alt="Data Security">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Security</span>
+              <h3 class="gallery-title">Enterprise Security</h3>
+              <p class="gallery-desc">Military-grade AES-256 encryption protecting every patient record.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-animate>
+            <img src="../assets/images/doctor_using_tablet_transcription_1772732263581.png" alt="Doctor using tablet">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Result</span>
+              <h3 class="gallery-title">Clinical Efficiency</h3>
+              <p class="gallery-desc">Seamlessly integrated transcripts delivered directly to your tablet.</p>
+            </div>
+          </div>
+
+          <!-- Add more items if needed with placeholder or other generated images -->
+          <div class="gallery-item" data-animate>
+            <img src="../assets/images/medical_tech_ai_transcription_1772691095520.png" alt="Medical Technology">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Infrastructure</span>
+              <h3 class="gallery-title">Secure Infrastructure</h3>
+              <p class="gallery-desc">US-based, HIPAA-compliant server networks.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-animate>
+            <img src="../assets/images/medical_security_network_1772691112301.png" alt="Network Security">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Compliance</span>
+              <h3 class="gallery-title">Global Standards</h3>
+              <p class="gallery-desc">Meeting SOC 2 Type II and HIPAA requirements every day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready for Accurate Documentation?</h2>
+        <p>Join the thousands of providers who trust MedTranscribe for their clinical documentation needs.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="signup.html" class="btn btn-white btn-lg">Start Free Trial</a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="navbar-brand" aria-label="MedTranscribe Home">
+            <div class="navbar-logo">MT</div>
+            <div class="navbar-title" style="color:white">MedTranscribe<span style="color:#94a3b8">Medical
+                Transcription</span></div>
+          </a>
+          <p>HIPAA-compliant medical transcription services trusted by 500+ healthcare providers across the United
+            States.</p>
+          <div class="footer-badges" aria-label="Certifications">
+            <span class="footer-badge">HIPAA</span>
+            <span class="footer-badge">SOC 2</span>
+            <span class="footer-badge">HL7</span>
+            <span class="footer-badge">FHIR</span>
+          </div>
+        </div>
+        <nav aria-label="Services footer navigation">
+          <div class="footer-title">Services</div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Clinical Notes</a>
+            <a href="services.html" class="footer-link">Radiology Reports</a>
+            <a href="services.html" class="footer-link">Surgical Notes</a>
+            <a href="services.html" class="footer-link">EMR Integration</a>
+            <a href="services.html" class="footer-link">Enterprise</a>
+          </div>
+        </nav>
+        <nav aria-label="Company footer navigation">
+          <div class="footer-title">Company</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="gallery.html" class="footer-link">Gallery</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Blog</a>
+          </div>
+        </nav>
+        <nav aria-label="Legal footer navigation">
+          <div class="footer-title">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">HIPAA Policy</a>
+            <a href="#" class="footer-link">BAA Template</a>
+            <a href="#" class="footer-link">Accessibility</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 MedTranscribe Inc. All rights reserved.</span>
+        <span>🏥 HIPAA Compliant | 🔒 SOC 2 Certified | 🇺🇸 US-Based Servers</span>
+      </div>
+    </div>
+  </footer>
+
+  <button data-back-to-top aria-label="Back to top"
+    style="position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--color-primary-700);color:white;border:none;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s;z-index:500;cursor:pointer">↑</button>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

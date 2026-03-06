@@ -466,4 +466,39 @@ function initDashboard() {
   }, 1200);
 }
 
+// ============================================================
+// LOGOUT MODAL
+// ============================================================
+function openLogoutModal() {
+  const modal = document.getElementById('logout-modal');
+  if (modal) modal.classList.add('active');
+}
+
+function closeLogoutModal() {
+  const modal = document.getElementById('logout-modal');
+  if (modal) modal.classList.remove('active');
+}
+
+function handleLogout() {
+  const modal = document.getElementById('logout-modal');
+  if (modal) {
+    const card = modal.querySelector('.modal-card');
+    card.innerHTML = `
+      <div class="flex flex-col items-center py-4">
+        <div class="spinner mb-4"></div>
+        <p class="font-bold">Signing you out safely...</p>
+      </div>
+    `;
+  }
+  
+  setTimeout(() => {
+    window.location.href = '../index.html';
+  }, 1500);
+}
+
+// Attach to window for inline HTML access
+window.openLogoutModal = openLogoutModal;
+window.closeLogoutModal = closeLogoutModal;
+window.handleLogout = handleLogout;
+
 document.addEventListener('DOMContentLoaded', initDashboard);

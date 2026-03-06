@@ -31,14 +31,15 @@
           <a href="home-2.html" class="nav-link">Home 2</a>
           <a href="services.html" class="nav-link">Services</a>
           <a href="security.html" class="nav-link">Security</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
           <a href="about.html" class="nav-link active" aria-current="page">About</a>
           <a href="contact.html" class="nav-link">Contact</a>
-          <a href="dashboard.html" class="nav-link">Dashboard</a>
         </div>
         <div class="navbar-actions">
           <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
           <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span
               data-theme-icon>🌙</span></button>
+          <a href="dashboard.html" class="btn btn-ghost btn-sm hide-mobile">Dashboard</a>
           <a href="login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
           <a href="signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
           <button class="mobile-menu-btn" data-mobile-menu-btn aria-label="Open menu" aria-expanded="false"
@@ -49,6 +50,7 @@
         <a href="../index.html" class="nav-link">Home</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="security.html" class="nav-link">Security</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="about.html" class="nav-link active">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="dashboard.html" class="nav-link">Dashboard</a>
@@ -259,38 +261,60 @@
       </div>
     </section>
   </main>
-
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="navbar-brand">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" aria-label="MedTranscribe Home">
             <div class="navbar-logo">MT</div>
             <div class="navbar-title" style="color:white">MedTranscribe<span style="color:#94a3b8">Medical
                 Transcription</span></div>
           </a>
-          <p>HIPAA-compliant medical transcription trusted by 500+ healthcare providers.</p>
-          <div class="footer-badges"><span class="footer-badge">HIPAA</span><span class="footer-badge">SOC 2</span>
+          <p>HIPAA-compliant medical transcription services trusted by 500+ healthcare providers across the United
+            States.</p>
+          <div class="footer-badges" aria-label="Certifications">
+            <span class="footer-badge">HIPAA</span>
+            <span class="footer-badge">SOC 2</span>
+            <span class="footer-badge">HL7</span>
+            <span class="footer-badge">FHIR</span>
           </div>
         </div>
-        <nav aria-label="Services">
+        <nav aria-label="Services footer navigation">
           <div class="footer-title">Services</div>
-          <div class="footer-links"><a href="services.html" class="footer-link">Clinical Notes</a><a
-              href="services.html" class="footer-link">Radiology Reports</a><a href="services.html"
-              class="footer-link">EMR Integration</a></div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Clinical Notes</a>
+            <a href="services.html" class="footer-link">Radiology Reports</a>
+            <a href="services.html" class="footer-link">Surgical Notes</a>
+            <a href="services.html" class="footer-link">EMR Integration</a>
+            <a href="services.html" class="footer-link">Enterprise</a>
+          </div>
         </nav>
-        <nav aria-label="Company">
+        <nav aria-label="Company footer navigation">
           <div class="footer-title">Company</div>
-          <div class="footer-links"><a href="about.html" class="footer-link">About Us</a><a href="about.html#team"
-              class="footer-link">Our Team</a><a href="contact.html" class="footer-link">Contact</a></div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="gallery.html" class="footer-link">Gallery</a>
+            <a href="about.html#team" class="footer-link">Our Team</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Blog</a>
+          </div>
         </nav>
-        <nav aria-label="Legal">
+        <nav aria-label="Legal footer navigation">
           <div class="footer-title">Legal</div>
-          <div class="footer-links"><a href="#" class="footer-link">Privacy Policy</a><a href="#"
-              class="footer-link">Terms of Service</a><a href="#" class="footer-link">HIPAA Policy</a></div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">HIPAA Policy</a>
+            <a href="#" class="footer-link">BAA Template</a>
+            <a href="#" class="footer-link">Accessibility</a>
+          </div>
         </nav>
       </div>
-      <div class="footer-bottom"><span>© 2025 MedTranscribe Inc. All rights reserved.</span><span>🔒 HIPAA
-          Compliant</span></div>
+      <div class="footer-bottom">
+        <span>© 2025 MedTranscribe Inc. All rights reserved.</span>
+        <span>🏥 HIPAA Compliant | 🔒 SOC 2 Certified | 🇺🇸 US-Based Servers</span>
+      </div>
     </div>
   </footer>
   <button data-back-to-top aria-label="Back to top"

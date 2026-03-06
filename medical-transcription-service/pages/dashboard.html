@@ -46,6 +46,9 @@
                 <button class="nav-link" data-nav-item="settings">
                     <span style="font-size:1.5rem">⚙️</span> Settings
                 </button>
+                <button class="nav-link" onclick="window.location.href='gallery.html'">
+                    <span style="font-size:1.5rem">🖼️</span> Gallery
+                </button>
             </nav>
 
             <div class="sidebar-footer">
@@ -65,7 +68,7 @@
                             <div class="text-[10px] text-muted uppercase tracking-tighter">Chief Surgeon</div>
                         </div>
                     </div>
-                    <button class="nav-link" onclick="window.location.href='login.html'"
+                    <button class="nav-link" onclick="openLogoutModal()"
                         style="color:var(--color-error); border-top: 1px solid var(--surface-border); border-radius: 0; padding-top: 1.5rem; margin-top: 0.5rem">
                         <span style="font-size:1.2rem">🚪</span> Sign Out
                     </button>
@@ -95,36 +98,36 @@
 
                     <!-- STATS CARDS -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                        <div class="card bg-white shadow-sm border-0">
+                        <div class="card shadow-sm border-0">
                             <div class="flex justify-between items-center mb-4">
                                 <div class="text-sm text-muted font-bold uppercase tracking-widest">Total Jobs</div>
-                                <span class="p-2 rounded-lg bg-primary-50 text-blue-600">📄</span>
+                                <span class="p-2 rounded-lg" style="background:var(--color-primary-50); color:var(--color-primary-700)">📄</span>
                             </div>
                             <div class="text-4xl font-extrabold" data-stat-value="total">0</div>
                             <div class="text-xs text-success mt-2 font-bold">+12% from last week</div>
                         </div>
-                        <div class="card bg-white shadow-sm border-0">
+                        <div class="card shadow-sm border-0">
                             <div class="flex justify-between items-center mb-4">
                                 <div class="text-sm text-muted font-bold uppercase tracking-widest">Completed</div>
-                                <span class="p-2 rounded-lg bg-green-50 text-green-600">✅</span>
+                                <span class="p-2 rounded-lg" style="background:var(--color-success-bg); color:var(--color-success)">✅</span>
                             </div>
                             <div class="text-4xl font-extrabold text-success" data-stat-value="completed">0</div>
                             <div class="text-xs text-muted mt-2">Ready for EMR export</div>
                         </div>
-                        <div class="card bg-white shadow-sm border-0">
+                        <div class="card shadow-sm border-0">
                             <div class="flex justify-between items-center mb-4">
                                 <div class="text-sm text-muted font-bold uppercase tracking-widest">Processing</div>
-                                <span class="p-2 rounded-lg bg-amber-50 text-amber-600">⏳</span>
+                                <span class="p-2 rounded-lg" style="background:var(--color-warning-bg); color:var(--color-warning)">⏳</span>
                             </div>
-                            <div class="text-4xl font-extrabold text-amber-600" data-stat-value="processing">0</div>
+                            <div class="text-4xl font-extrabold text-warning" data-stat-value="processing">0</div>
                             <div class="text-xs text-muted mt-2">Estimated delivery in 4h</div>
                         </div>
-                        <div class="card bg-white shadow-sm border-0">
+                        <div class="card shadow-sm border-0">
                             <div class="flex justify-between items-center mb-4">
                                 <div class="text-sm text-muted font-bold uppercase tracking-widest">Pending</div>
-                                <span class="p-2 rounded-lg bg-red-50 text-red-600">🛑</span>
+                                <span class="p-2 rounded-lg" style="background:var(--color-error-bg); color:var(--color-error)">🛑</span>
                             </div>
-                            <div class="text-4xl font-extrabold text-red-600" data-stat-value="pending">0</div>
+                            <div class="text-4xl font-extrabold text-error" data-stat-value="pending">0</div>
                             <div class="text-xs text-muted mt-2">Awaiting audio approval</div>
                         </div>
                     </div>
@@ -157,28 +160,28 @@
                             <h2 class="text-2xl font-bold mb-6">Live System Status</h2>
                             <div class="space-y-4">
                                 <div
-                                    class="flex items-center justify-between p-4 bg-green-50 rounded-xl border border-green-100">
+                                    class="flex items-center justify-between p-4 rounded-xl border" style="background:var(--color-success-bg); border-color:var(--color-success);">
                                     <div class="flex items-center gap-3">
-                                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                                        <span class="font-bold text-green-800">Transcription Engine</span>
+                                        <span class="w-2 h-2 rounded-full" style="background:var(--color-success)"></span>
+                                        <span class="font-bold" style="color:var(--color-success)">Transcription Engine</span>
                                     </div>
-                                    <span class="text-xs font-bold text-green-600">OPERATIONAL</span>
+                                    <span class="text-xs font-bold" style="color:var(--color-success)">OPERATIONAL</span>
                                 </div>
                                 <div
-                                    class="flex items-center justify-between p-4 bg-green-50 rounded-xl border border-green-100">
+                                    class="flex items-center justify-between p-4 rounded-xl border" style="background:var(--color-success-bg); border-color:var(--color-success);">
                                     <div class="flex items-center gap-3">
-                                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                                        <span class="font-bold text-green-800">Secure Storage (US-East)</span>
+                                        <span class="w-2 h-2 rounded-full" style="background:var(--color-success)"></span>
+                                        <span class="font-bold" style="color:var(--color-success)">Secure Storage (US-East)</span>
                                     </div>
-                                    <span class="text-xs font-bold text-green-600">CONNECTED</span>
+                                    <span class="text-xs font-bold" style="color:var(--color-success)">CONNECTED</span>
                                 </div>
                                 <div
-                                    class="flex items-center justify-between p-4 bg-amber-50 rounded-xl border border-amber-100">
+                                    class="flex items-center justify-between p-4 rounded-xl border" style="background:var(--color-warning-bg); border-color:var(--color-warning);">
                                     <div class="flex items-center gap-3">
-                                        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                                        <span class="font-bold text-amber-800">AI Quality Review</span>
+                                        <span class="w-2 h-2 rounded-full animate-pulse" style="background:var(--color-warning)"></span>
+                                        <span class="font-bold" style="color:var(--color-warning)">AI Quality Review</span>
                                     </div>
-                                    <span class="text-xs font-bold text-amber-600">HIGH LOAD</span>
+                                    <span class="text-xs font-bold" style="color:var(--color-warning)">HIGH LOAD</span>
                                 </div>
                             </div>
                         </div>
@@ -354,6 +357,18 @@
         </main>
     </div>
 
+    <!-- LOGOUT CONFIRMATION MODAL -->
+    <div id="logout-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon">🚪</div>
+            <h3 class="modal-title">Sign Out</h3>
+            <p class="modal-text">Are you sure you want to log out of your clinical dashboard?</p>
+            <div class="modal-actions">
+                <button class="btn btn-ghost" onclick="closeLogoutModal()">Cancel</button>
+                <button class="btn btn-primary" style="background:var(--color-error); border-color:var(--color-error)" onclick="handleLogout()">Yes, Sign Out</button>
+            </div>
+        </div>
+    </div>
 
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/dashboard.js"></script>

@@ -95,6 +95,9 @@
   --color-warning-bg: #451a03;
   --color-error-bg: #450a0a;
   --color-info-bg: #0c2f4f;
+  --color-primary-50: rgba(30, 58, 138, 0.2);
+  --color-primary-100: rgba(30, 58, 138, 0.3);
+  --color-primary-200: rgba(30, 58, 138, 0.4);
 }
 
 *,
@@ -191,7 +194,9 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem)
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -249,6 +254,13 @@ p:last-child {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .tech-card {
@@ -969,12 +981,36 @@ p:last-child {
 }
 
 .hero h1 {
-  margin-bottom: var(--space-4)
+  margin-bottom: var(--space-6);
 }
 
-.hero h1 em {
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.hero-title em,
+.hero-title .text-primary-color {
   font-style: italic;
-  color: var(--color-primary-700)
+  color: var(--color-primary-700);
+  background: linear-gradient(135deg, var(--color-primary-700) 0%, var(--color-primary-600) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .hero-title em,
+[data-theme="dark"] .hero-title .text-primary-color {
+  background: linear-gradient(135deg, var(--color-primary-400) 0%, var(--color-primary-200) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -1034,12 +1070,18 @@ p:last-child {
 .section-eyebrow {
   display: inline-block;
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
-  font-weight: 600;
+  font-size: 0.9375rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-primary-600);
-  margin-bottom: var(--space-3)
+  letter-spacing: 0.1em;
+  color: var(--color-primary-700);
+  margin-bottom: var(--space-4)
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
 }
 
 .section-header p {
@@ -1563,22 +1605,45 @@ p:last-child {
 .page-header {
   padding-top: calc(64px + var(--space-12));
   padding-bottom: var(--space-12);
-  background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-700) 100%);
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('../photo/breedcrumbs.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  text-align: center
+  text-align: center;
+  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .page-header h1 {
   color: white;
-  margin-bottom: var(--space-4)
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .page-header p {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.125rem;
-  max-width: 56ch;
-  margin-inline: auto
+  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.6;
+  max-width: 65ch;
+  margin-inline: auto;
+  font-weight: 400;
 }
 
 .breadcrumb {
@@ -1586,23 +1651,28 @@ p:last-child {
   align-items: center;
   gap: var(--space-2);
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
   justify-content: center;
-  margin-bottom: var(--space-4)
+  margin-bottom: var(--space-8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .breadcrumb a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
 .breadcrumb a:hover {
-  color: white
+  color: white;
 }
 
 .breadcrumb span {
-  opacity: 0.4
+  opacity: 0.4;
+  margin: 0 var(--space-1);
 }
 
 /* ABOUT */
@@ -1918,7 +1988,7 @@ p:last-child {
 .stat-item strong {
   display: block;
   font-family: var(--font-ui);
-  font-size: 2.5rem;
+  font-size: 3.25rem;
   font-weight: 800;
   color: white;
   line-height: 1;
@@ -2106,7 +2176,7 @@ p:last-child {
 }
 
 .app-content h1 {
-  font-size: 2.25rem !important;
+  font-size: 2.75rem !important;
   margin-bottom: var(--space-2);
 }
 
@@ -2268,4 +2338,68 @@ p:last-child {
   .sidebar-nav .nav-link {
     white-space: nowrap
   }
+}
+
+/* MODAL SYSTEM */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(10, 25, 47, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-card {
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 24px;
+  padding: var(--space-8);
+  width: 100%;
+  max-width: 420px;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-overlay.active .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-4);
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.modal-text {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
+}
+
+.modal-actions {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.modal-actions .btn {
+  flex: 1;
+  justify-content: center;
 }

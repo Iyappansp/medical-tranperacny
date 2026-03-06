@@ -1,20 +1,88 @@
 /* dark-mode.css — Additional dark mode overrides */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Dashboard Specific Overrides */
+[data-theme="dark"] .app-sidebar {
+  background: #0f172a;
+  border-right-color: #1e293b;
+}
+
+[data-theme="dark"] .sidebar-nav .nav-link {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .sidebar-nav .nav-link:not(.active):hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .dash-top-bar {
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+[data-theme="dark"] .card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .upload-zone {
+  background: rgba(30, 41, 59, 0.5);
+  border-color: #334155;
+}
+
+[data-theme="dark"] .upload-zone:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--color-primary-400);
+}
+
+[data-theme="dark"] .data-table thead tr {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .data-table th {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .data-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Status Badges & Icons */
+[data-theme="dark"] .badge-success { background: #064e3b; color: #6ee7b7; }
+[data-theme="dark"] .badge-warning { background: #78350f; color: #fcd34d; }
+[data-theme="dark"] .badge-error { background: #7f1d1d; color: #fca5a5; }
+[data-theme="dark"] .badge-info { background: #0c2f4f; color: #7dd3fc; }
+[data-theme="dark"] .badge-neutral { background: #334155; color: #cbd5e1; }
+
+[data-theme="dark"] [style*="color:var(--color-primary-700)"] { color: #60a5fa !important; }
+[data-theme="dark"] [style*="background:var(--color-primary-50)"] { background: rgba(30, 58, 138, 0.3) !important; }
+
+/* Utilities */
+[data-theme="dark"] .text-muted { color: #64748b !important; }
+[data-theme="dark"] .text-secondary { color: #94a3b8 !important; }
+[data-theme="dark"] .text-success { color: #4ade80 !important; }
+[data-theme="dark"] .text-warning { color: #fbbf24 !important; }
+[data-theme="dark"] .text-error { color: #f87171 !important; }
+
+/* Form Elements */
+[data-theme="dark"] .form-input {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .form-input:focus {
+  border-color: var(--color-primary-400);
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+/* Animations & UI */
 [data-theme="dark"] .hero-eyebrow { background: rgba(59,130,246,0.15); color: #93c5fd; }
-[data-theme="dark"] .card-interactive:hover { border-color: rgba(59,130,246,0.3); }
-[data-theme="dark"] .faq-item.open .faq-icon { background: rgba(59,130,246,0.2); }
-[data-theme="dark"] .step-number { box-shadow: 0 0 0 4px rgba(59,130,246,0.15); }
 [data-theme="dark"] .pricing-card.featured { background: linear-gradient(135deg,#1e3a8a,#1d4ed8); }
-[data-theme="dark"] .trust-logo:hover { color: #93c5fd; }
-[data-theme="dark"] .team-avatar { box-shadow: 0 0 0 3px rgba(59,130,246,0.2); }
-[data-theme="dark"] .alert-success { border-color: rgba(22,163,74,0.3); }
-[data-theme="dark"] .alert-error   { border-color: rgba(220,38,38,0.3); }
-[data-theme="dark"] .alert-info    { border-color: rgba(2,132,199,0.3); }
-[data-theme="dark"] .alert-warning { border-color: rgba(217,119,6,0.3); }
-[data-theme="dark"] .form-input, [data-theme="dark"] .form-select, [data-theme="dark"] .form-textarea { color: #f1f5f9; }
-[data-theme="dark"] .dashboard-sidebar { background: #0f172a; border-right: 1px solid #334155; }
-[data-theme="dark"] .upload-zone { background: rgba(30,58,138,0.1); border-color: #334155; }
-[data-theme="dark"] .upload-zone:hover, [data-theme="dark"] .upload-zone.dragover { border-color: #2563eb; background: rgba(30,58,138,0.2); }
-[data-theme="dark"] .data-table thead tr { background: #1e293b; }
-[data-theme="dark"] .data-table tbody tr:hover { background: rgba(255,255,255,0.03); }
-[data-theme="dark"] .data-table { border-color: #334155; }
-[data-theme="dark"] .data-table th, [data-theme="dark"] .data-table td { border-color: #334155; }
+[data-theme="dark"] .bg-surface-secondary { background: var(--surface-secondary) !important; }

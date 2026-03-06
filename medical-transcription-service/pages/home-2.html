@@ -34,9 +34,9 @@
                     <a href="home-2.html" class="nav-link active" role="listitem">Home 2</a>
                     <a href="services.html" class="nav-link" role="listitem">Services</a>
                     <a href="security.html" class="nav-link" role="listitem">Security</a>
+                    <a href="gallery.html" class="nav-link" role="listitem">Gallery</a>
                     <a href="about.html" class="nav-link" role="listitem">About</a>
                     <a href="contact.html" class="nav-link" role="listitem">Contact</a>
-                    <a href="dashboard.html" class="nav-link" role="listitem">Dashboard</a>
                 </div>
                 <div class="navbar-actions">
                     <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
@@ -44,6 +44,7 @@
                         title="Toggle dark mode">
                         <span data-theme-icon>🌙</span>
                     </button>
+                    <a href="dashboard.html" class="btn btn-ghost btn-sm hide-mobile">Dashboard</a>
                     <a href="login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
                     <a href="signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
                     <button class="mobile-menu-btn" data-mobile-menu-btn aria-label="Open menu" aria-expanded="false"
@@ -57,6 +58,7 @@
                 <a href="home-2.html" class="nav-link active">Home 2</a>
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="security.html" class="nav-link">Security</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="dashboard.html" class="nav-link">Dashboard</a>
@@ -69,7 +71,6 @@
     </header>
 
     <main id="main-content">
-
         <!-- HERO -->
         <section class="hero relative overflow-hidden flex items-center"
             style="min-height: 85vh; background: var(--surface-bg); padding-top: 100px;" aria-labelledby="hero-heading">
@@ -80,55 +81,57 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="animate-fade-in-up">
                         <div class="tech-badge mb-4">🏥 Optimized for Specialty Clinics</div>
-                        <h1 id="hero-heading" class="mb-6" style="line-height:1.1">
+            <h1 id="hero-heading" class="hero-title">
                             Next-Gen Transcription <br><span class="text-primary-color">Specialty Data Mining</span>
                         </h1>
                         <p class="text-lg mb-8" style="max-width: 540px;">
-                            Don't just transcribe—analyze. Our specialty-specific platform extracts clinical insights
-                            from your dictations,
-                            streamlining specialized patient management.
+                            Don't just transcribe—analyze. Our specialty-specific platform extracts clinical insights from your dictations, streamlining specialized patient management with structured data integration.
                         </p>
                         <div class="flex gap-4 flex-wrap mb-12">
-                            <a href="signup.html" class="btn btn-primary btn-lg px-8">Free Clinical Audit</a>
-                            <a href="services.html" class="btn btn-ghost btn-lg underline">Case Studies</a>
+                            <a href="signup.html" class="btn btn-primary btn-lg px-8 shadow-lg shadow-primary-900/20">Free Clinical Audit</a>
+                            <a href="services.html" class="btn btn-ghost btn-lg underline font-semibold">Case Studies</a>
                         </div>
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
                             <div>
-                                <div class="text-2xl font-bold text-primary-color">99.9%</div>
-                                <div class="text-xs uppercase tracking-widest text-muted">Precision</div>
+                                <div class="text-3xl font-bold text-primary-color" data-counter="99.9" data-counter-suffix="%">99.9%</div>
+                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Precision</div>
                             </div>
                             <div>
-                                <div class="text-2xl font-bold text-primary-color">4hr</div>
-                                <div class="text-xs uppercase tracking-widest text-muted">Rush Option</div>
+                                <div class="text-3xl font-bold text-primary-color" data-counter="4" data-counter-suffix="hr">4hr</div>
+                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Rush Option</div>
                             </div>
                             <div>
-                                <div class="text-2xl font-bold text-primary-color">AI+HQ</div>
-                                <div class="text-xs uppercase tracking-widest text-muted">Hybrid logic</div>
+                                <div class="text-3xl font-bold text-primary-color">AI+H</div>
+                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Hybrid Intel</div>
                             </div>
                             <div>
-                                <div class="text-2xl font-bold text-primary-color">FHIR</div>
-                                <div class="text-xs uppercase tracking-widest text-muted">Data Standards</div>
+                                <div class="text-3xl font-bold text-primary-color">HL7</div>
+                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Standards</div>
                             </div>
                         </div>
                     </div>
                     <div class="relative animate-fade-in-up" style="animation-delay: 0.3s">
-                        <div class="glass p-6 rounded-2xl relative z-20">
-                            <div class="tech-img-container rounded-xl shadow-2xl">
+                        <div class="glass p-8 rounded-3xl relative z-20 border border-white/20 shadow-2xl">
+                            <div class="tech-img-container rounded-2xl overflow-hidden shadow-inner">
                                 <img src="../assets/images/medical_tech_ai_transcription_1772691095520.png"
                                     alt="Specialty Analytics Visualization" class="w-full"
                                     style="filter: hue-rotate(45deg);">
                             </div>
+                            <!-- Floating Data Points -->
+                            <div class="absolute -top-4 -right-4 glass p-4 rounded-xl shadow-xl animate-pulse delay-1000">
+                                <span class="text-xs font-bold text-primary-color">Structured Extraction Active</span>
+                            </div>
                         </div>
+                        <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-primary-500/10 blur-3xl rounded-full"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TRUST BAR -->
-        <div class="trust-bar"
-            style="background: var(--surface-bg); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
+        <div class="trust-bar" style="background: var(--surface-bg); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
             <div class="container py-8">
-                <div class="flex flex-wrap justify-center gap-12 grayscale opacity-50">
+                <div class="flex flex-wrap justify-center gap-12 grayscale opacity-40 hover:opacity-100 transition-opacity">
                     <span class="font-bold text-sm tracking-widest">ONCOLOGY NETWORK</span>
                     <span class="font-bold text-sm tracking-widest">NEUROLOGY ASSOC</span>
                     <span class="font-bold text-sm tracking-widest">CARDIAC CARE</span>
@@ -137,34 +140,148 @@
             </div>
         </div>
 
-        <!-- SPECIALTY FEATURES -->
+        <!-- SPECIALTY VERTICALS -->
+        <section class="section bg-surface-secondary">
+            <div class="container">
+                <div class="section-header text-center mb-16">
+                    <span class="section-eyebrow">Expertise Across All Fields</span>
+                    <h2>Specialized for Your Discipline</h2>
+                    <p>Generic transcription doesn't work for complex medical specialties. Our team is trained in the nuance of your specific terminology.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card card-interactive p-8" data-animate>
+                        <div class="text-4xl mb-6">🧠</div>
+                        <h4>Neurology</h4>
+                        <p class="text-sm">Expert handling of EEG reports, cognitive assessments, and complex neurological examinations with precise anatomical references.</p>
+                    </div>
+                    <div class="card card-interactive p-8" data-animate>
+                        <div class="text-4xl mb-6">🫀</div>
+                        <h4>Cardiology</h4>
+                        <p class="text-sm">Specialized in EKG findings, stress tests, echocardiograms, and interventional cardiology procedure notes.</p>
+                    </div>
+                    <div class="card card-interactive p-8" data-animate>
+                        <div class="text-4xl mb-6">🎗️</div>
+                        <h4>Oncology</h4>
+                        <p class="text-sm">Accurate clinical trial documentation, chemotherapy regimens, and multi-disciplinary tumor board summaries.</p>
+                    </div>
+                    <div class="card card-interactive p-8" data-animate>
+                        <div class="text-4xl mb-6">🦴</div>
+                        <h4>Orthopedics</h4>
+                        <p class="text-sm">Operative reports for complex reconstructions, sports medicine assessments, and detailed physical therapy plans.</p>
+                    </div>
+                    <div class="card card-interactive p-8" data-animate>
+                        <div class="text-4xl mb-6">🍼</div>
+                        <h4>Pediatrics</h4>
+                        <p class="text-sm">Growth milestones, developmental assessments, and pediatric sub-specialty clinical documentation.</p>
+                    </div>
+                    <div class="card card-interactive p-8" data-animate>
+                        <div class="text-4xl mb-6">👁️</div>
+                        <h4>Ophthalmology</h4>
+                        <p class="text-sm">High-speed dictation of eye exams, surgical procedures like LASIK and cataract removals, and diagnostic imaging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA MINING SECTION -->
         <section class="section">
             <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div data-animate>
+                        <div class="tech-badge mb-4">NLP Enabled</div>
+                        <h2 class="mb-6 font-display">Clinical Intelligence <br>from Every Dictation</h2>
+                        <p class="mb-8">We don't just provide text. Our platform uses Natural Language Processing to extract ICD-10 codes, medication lists, and critical lab values from your audio.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-color shrink-0">📊</div>
+                                <div>
+                                    <h5 class="font-bold mb-1">Structured Data Export</h5>
+                                    <p class="text-sm">Export directly into your EMR as discrete data points rather than just static text blocks.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-color shrink-0">🔍</div>
+                                <div>
+                                    <h5 class="font-bold mb-1">Pattern Recognition</h5>
+                                    <p class="text-sm">Identify trends in patient populations based on longitudinal transcription analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" data-animate>
+                        <div class="glass p-4 rounded-2xl shadow-2xl overflow-hidden">
+                            <div class="bg-gray-900 rounded-xl p-6 font-mono text-xs text-green-400 leading-relaxed">
+                                <div class="mb-2 text-gray-500">// Extracting clinical entities...</div>
+                                <div class="flex justify-between border-b border-gray-800 pb-2 mb-2">
+                                    <span>Diagnosis:</span>
+                                    <span class="text-blue-400">Essential Hypertension (I10)</span>
+                                </div>
+                                <div class="flex justify-between border-b border-gray-800 pb-2 mb-2">
+                                    <span>Medication:</span>
+                                    <span class="text-yellow-400">Lisinopril 10mg QD</span>
+                                </div>
+                                <div class="flex justify-between border-b border-gray-800 pb-2 mb-2">
+                                    <span>Lab Value:</span>
+                                    <span class="text-red-400">K+: 3.2 (Critical Low)</span>
+                                </div>
+                                <div class="mt-4 text-primary-color animate-pulse">> API Pushing to EPIC EMR...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS BAND -->
+        <div class="stats-band" role="region" aria-label="Specialty Performance">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-animate>
+                        <strong><span data-counter="500" data-counter-suffix="+">500+</span></strong>
+                        <span>Specialty Clinics</span>
+                    </div>
+                    <div class="stat-item" data-animate>
+                        <strong><span data-counter="12" data-counter-suffix="">12</span></strong>
+                        <span>EMR Integrations</span>
+                    </div>
+                    <div class="stat-item" data-animate>
+                        <strong><span data-counter="98" data-counter-suffix="%">98%</span></strong>
+                        <span>Client Retention</span>
+                    </div>
+                    <div class="stat-item" data-animate>
+                        <strong><span data-counter="10" data-counter-suffix="M">10M</span></strong>
+                        <span>Lines Transcribed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TELEHEALTH SECTION (EXISTING ENHANCED) -->
+        <section class="section bg-surface-secondary">
+            <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div class="tech-img-container rounded-2xl shadow-xl">
+                    <div class="tech-img-container rounded-2xl shadow-xl order-last md:order-first" data-animate>
                         <img src="../assets/images/doctor_tablet_transcription_1772691136919.png"
                             alt="Telehealth Interface">
                     </div>
-                    <div>
+                    <div data-animate>
                         <div class="tech-badge mb-4">Telehealth Integration</div>
                         <h2 class="mb-6">Virtual Care Documentation</h2>
-                        <p class="mb-8">Optimized for virtual consults, our platform multi-tracks speakers and ensures
-                            every nuance of the remote patient interaction is captured accurately.</p>
-                        <ul class="space-y-4">
+                        <p class="mb-8">Optimized for virtual consults, our platform multi-tracks speakers and ensures every nuance of the remote patient interaction is captured accurately.</p>
+                        <ul class="space-y-6">
                             <li class="flex items-start gap-3">
-                                <span class="text-success">✔</span>
+                                <div class="w-6 h-6 rounded-full bg-success text-white flex items-center justify-center text-[10px] shrink-0">L</div>
                                 <div>
-                                    <strong class="block">Zoom & Teams Compatible</strong>
-                                    <span class="text-sm text-muted">Direct audio capture from virtual meeting
-                                        recordings.</span>
+                                    <strong class="block">Zoom & Teams Native</strong>
+                                    <span class="text-sm text-muted">Seamlessly ingest cloud recordings from your telehealth provider with automated file transfer.</span>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-success">✔</span>
+                                <div class="w-6 h-6 rounded-full bg-success text-white flex items-center justify-center text-[10px] shrink-0">L</div>
                                 <div>
-                                    <strong class="block">Patient Consent Tracking</strong>
-                                    <span class="text-sm text-muted">Automated flagging of verbal consent markers in
-                                        audio.</span>
+                                    <strong class="block">Multi-Speaker Identification</strong>
+                                    <span class="text-sm text-muted">Clearly distinguish between provider, patient, and caregiver in pediatric or complex consults.</span>
                                 </div>
                             </li>
                         </ul>
@@ -173,42 +290,111 @@
             </div>
         </section>
 
-    </main>
-
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="../index.html" class="navbar-brand">
-                        <div class="navbar-logo">MT</div>
-                        <div class="navbar-title" style="color:white">MedTranscribe<span style="color:#94a3b8">Medical
-                                Transcription</span></div>
-                    </a>
-                    <p>Secure HIPAA-compliant medical transcription services for healthcare professionals.</p>
-                    <div class="footer-badges">
-                        <span class="footer-badge">HIPAA</span>
-                        <span class="footer-badge">SOC 2</span>
-                    </div>
+        <!-- TESTIMONIALS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">Case Studies</span>
+                    <h2>Results from the Field</h2>
                 </div>
-                <nav aria-label="Support">
-                    <div class="footer-title">Support</div>
-                    <div class="footer-links">
-                        <a href="contact.html" class="footer-link">Help Center</a>
-                        <a href="contact.html" class="footer-link">API Docs</a>
-                        <a href="contact.html" class="footer-link">Privacy Policy</a>
-                    </div>
-                </nav>
-                <div
-                    class="footer-bottom col-span-full mt-8 pt-8 border-t border-gray-700 text-xs flex justify-between">
-                    <span>© 2025 MedTranscribe Inc.</span>
-                    <div class="flex gap-4">
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
-                    </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <blockquote class="glass p-10 rounded-3xl border border-surface-border shadow-xl hover:shadow-2xl transition-all" data-animate>
+                        <div class="text-primary-color text-4xl mb-6">"</div>
+                        <p class="text-lg italic mb-8 font-medium">"Switching to MedTranscribe reduced our Neurology clinic's documentation lag from 3 days to under 6 hours. Their understanding of specialized neuro testing is unmatched."</p>
+                        <div class="flex items-center gap-4 border-t border-surface-border pt-6">
+                            <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold italic">DR</div>
+                            <div>
+                                <h6 class="font-bold">Dr. Elena Rossi</h6>
+                                <span class="text-xs text-muted uppercase tracking-widest">Chief of Neurology, NYH</span>
+                            </div>
+                        </div>
+                    </blockquote>
+                    <blockquote class="glass p-10 rounded-3xl border border-surface-border shadow-xl hover:shadow-2xl transition-all" data-animate style="animation-delay:0.2s">
+                        <div class="text-primary-color text-4xl mb-6">"</div>
+                        <p class="text-lg italic mb-8 font-medium">"The HL7 integration was a game changer for our Cardiology practice. Transcripts flow directly into Cerner with discrete data points extracted automatically."</p>
+                        <div class="flex items-center gap-4 border-t border-surface-border pt-6">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold italic">MK</div>
+                            <div>
+                                <h6 class="font-bold">Marcus Kemp</h6>
+                                <span class="text-xs text-muted uppercase tracking-widest">Clinic Administrator, HeartCare</span>
+                            </div>
+                        </div>
+                    </blockquote>
                 </div>
             </div>
+        </section>
+
+        <!-- CTA BAND -->
+        <section class="cta-band rounded-[40px] mx-4 lg:mx-12 mb-12 shadow-2xl">
+            <div class="container relative z-10">
+                <h2 id="cta-heading" class="mb-4">Upgrade Your Clinical Workflow Today</h2>
+                <p class="mb-8 opacity-80">Experience the difference that specialty-focused transcription makes for your practice.</p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="signup.html" class="btn btn-white btn-lg px-10 rounded-full">Start 7-Day Trial</a>
+                    <a href="contact.html" class="btn btn-outline-white btn-lg px-10 rounded-full">Speak to a Specialist</a>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 blur-3xl rounded-full -translate-y-1/2 translate-x-1/4"></div>
+        </section>
+    </main>
+
+     <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="navbar-brand" aria-label="MedTranscribe Home">
+            <div class="navbar-logo">MT</div>
+            <div class="navbar-title" style="color:white">MedTranscribe<span style="color:#94a3b8">Medical
+                Transcription</span></div>
+          </a>
+          <p>HIPAA-compliant medical transcription services trusted by 500+ healthcare providers across the United
+            States.</p>
+          <div class="footer-badges" aria-label="Certifications">
+            <span class="footer-badge">HIPAA</span>
+            <span class="footer-badge">SOC 2</span>
+            <span class="footer-badge">HL7</span>
+            <span class="footer-badge">FHIR</span>
+          </div>
         </div>
-    </footer>
+        <nav aria-label="Services footer navigation">
+          <div class="footer-title">Services</div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Clinical Notes</a>
+            <a href="services.html" class="footer-link">Radiology Reports</a>
+            <a href="services.html" class="footer-link">Surgical Notes</a>
+            <a href="services.html" class="footer-link">EMR Integration</a>
+            <a href="services.html" class="footer-link">Enterprise</a>
+          </div>
+        </nav>
+        <nav aria-label="Company footer navigation">
+          <div class="footer-title">Company</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="gallery.html" class="footer-link">Gallery</a>
+            <a href="about.html#team" class="footer-link">Our Team</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Blog</a>
+          </div>
+        </nav>
+        <nav aria-label="Legal footer navigation">
+          <div class="footer-title">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">HIPAA Policy</a>
+            <a href="#" class="footer-link">BAA Template</a>
+            <a href="#" class="footer-link">Accessibility</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 MedTranscribe Inc. All rights reserved.</span>
+        <span>🏥 HIPAA Compliant | 🔒 SOC 2 Certified | 🇺🇸 US-Based Servers</span>
+      </div>
+    </div>
+  </footer>
 
     <script src="../assets/js/main.js"></script>
 </body>

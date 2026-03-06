@@ -37,16 +37,16 @@
           <a href="index.html" class="nav-link active" role="listitem" aria-current="page">Home</a>
           <a href="pages/home-2.html" class="nav-link" role="listitem">Home 2</a>
           <a href="pages/services.html" class="nav-link" role="listitem">Services</a>
-          <a href="index.html#security" class="nav-link" role="listitem">Security</a>
+          <a href="pages/gallery.html" class="nav-link" role="listitem">Gallery</a>
           <a href="pages/about.html" class="nav-link" role="listitem">About</a>
           <a href="pages/contact.html" class="nav-link" role="listitem">Contact</a>
-          <a href="pages/dashboard.html" class="nav-link" role="listitem">Dashboard</a>
         </div>
         <div class="navbar-actions">
           <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
           <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
             <span data-theme-icon>🌙</span>
           </button>
+          <a href="pages/dashboard.html" class="btn btn-ghost btn-sm hide-mobile">Dashboard</a>
           <a href="pages/login.html" class="btn btn-secondary btn-sm hide-mobile">Login</a>
           <a href="pages/signup.html" class="btn btn-primary btn-sm hide-mobile">Sign Up</a>
           <button class="mobile-menu-btn" data-mobile-menu-btn aria-label="Open menu" aria-expanded="false"
@@ -60,6 +60,7 @@
         <a href="pages/home-2.html" class="nav-link">Home 2</a>
         <a href="pages/services.html" class="nav-link">Services</a>
         <a href="pages/security.html" class="nav-link">Security</a>
+        <a href="pages/gallery.html" class="nav-link">Gallery</a>
         <a href="pages/about.html" class="nav-link">About</a>
         <a href="pages/contact.html" class="nav-link">Contact</a>
         <a href="pages/dashboard.html" class="nav-link">Dashboard</a>
@@ -83,7 +84,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="animate-fade-in-up">
             <div class="tech-badge mb-4">🔒 Enterprise Grade Security</div>
-            <h1 id="hero-heading" class="mb-6" style="line-height:1.1">
+            <h1 id="hero-heading" class="hero-title">
               Precision <span class="text-primary-color">Medical Transcription</span> <br>Engineered for Excellence
             </h1>
             <p class="text-lg mb-8" style="max-width: 540px;">
@@ -123,7 +124,7 @@
                 style="width: 200px;">
                 <div class="flex items-center gap-3 mb-2">
                   <div class="w-2 h-2 rounded-full bg-success animate-pulse"></div>
-                  <span class="text-[10px] font-bold uppercase tracking-wider">System Live</span>
+                  <!-- <span class="text-[10px] font-bold uppercase tracking-wider">System Live</span> -->
                 </div>
                 <div class="h-1 bg-surface-border rounded-full overflow-hidden">
                   <div class="h-full bg-primary-color" style="width: 85%"></div>
@@ -247,8 +248,8 @@
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div data-animate>
-            <h2 id="security-heading">Military-Grade Security</h2>
-            <p class="mb-6">Your data security is our top priority. We use AES-256 encryption at rest and in transit,
+            <h1 id="security-heading" class="text-3xl lg:text-4xl font-bold mb-6">Military-Grade Security</h1>
+            <p class="text-lg mb-8">Your data security is our top priority. We use AES-256 encryption at rest and in transit,
               ensuring your patient information remains confidential and HIPAA-compliant.</p>
             <div class="flex flex-wrap gap-4 mb-8">
               <span class="badge badge-neutral">SOC 2 Type II</span>
@@ -570,6 +571,7 @@
           <div class="footer-title">Company</div>
           <div class="footer-links">
             <a href="pages/about.html" class="footer-link">About Us</a>
+            <a href="pages/gallery.html" class="footer-link">Gallery</a>
             <a href="pages/about.html#team" class="footer-link">Our Team</a>
             <a href="pages/contact.html" class="footer-link">Contact</a>
             <a href="#" class="footer-link">Careers</a>
