@@ -16,7 +16,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/fav.png">
+    <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,25 +26,24 @@
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- NAVBAR -->
   <header role="banner">
     <nav class="navbar" aria-label="Main navigation">
       <div class="container navbar-inner">
         <a href="index.html" class="navbar-brand" aria-label="MedTranscribe Home">
-          <div class="navbar-logo" aria-hidden="true">MT</div>
-          <div class="navbar-title">MedTranscribe<span>Medical Transcription</span></div>
+          <img src="assets/logo.png" alt="MedTranscribe Logo" class="navbar-logo-img">
         </a>
         <div class="navbar-nav" role="list">
-          <a href="index.html" class="nav-link active" role="listitem" aria-current="page">Home</a>
-          <a href="pages/home-2.html" class="nav-link" role="listitem">Home 2</a>
-          <a href="pages/services.html" class="nav-link" role="listitem">Services</a>
-          <a href="pages/gallery.html" class="nav-link" role="listitem">Gallery</a>
-          <a href="pages/about.html" class="nav-link" role="listitem">About</a>
-          <a href="pages/contact.html" class="nav-link" role="listitem">Contact</a>
+          <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+          <a href="pages/home-2.html" class="nav-link">Home 2</a>
+          <a href="pages/services.html" class="nav-link">Services</a>
+          <a href="pages/security.html" class="nav-link">Security</a>
+          <a href="pages/gallery.html" class="nav-link">Gallery</a>
+          <a href="pages/about.html" class="nav-link">About</a>
+          <a href="pages/contact.html" class="nav-link">Contact</a>
         </div>
         <div class="navbar-actions">
           <button class="btn btn-ghost btn-sm" data-rtl-toggle aria-label="Toggle RTL">RTL</button>
-          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
             <span data-theme-icon>🌙</span>
           </button>
           <a href="pages/dashboard.html" class="btn btn-ghost btn-sm hide-mobile">Dashboard</a>
@@ -55,8 +55,8 @@
           </button>
         </div>
       </div>
-      <div class="mobile-menu" id="mobile-nav" data-mobile-menu aria-label="Mobile navigation">
-        <a href="index.html" class="nav-link">Home</a>
+      <div class="mobile-menu" id="mobile-nav" data-mobile-menu>
+        <a href="index.html" class="nav-link active">Home</a>
         <a href="pages/home-2.html" class="nav-link">Home 2</a>
         <a href="pages/services.html" class="nav-link">Services</a>
         <a href="pages/security.html" class="nav-link">Security</a>
@@ -544,9 +544,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="navbar-brand" aria-label="MedTranscribe Home">
-            <div class="navbar-logo">MT</div>
-            <div class="navbar-title" style="color:white">MedTranscribe<span style="color:#94a3b8">Medical
-                Transcription</span></div>
+            <img src="assets/logo.png" alt="MedTranscribe Logo" class="navbar-logo-img">
           </a>
           <p>HIPAA-compliant medical transcription services trusted by 500+ healthcare providers across the United
             States.</p>

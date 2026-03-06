@@ -421,7 +421,7 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 120px;
   gap: var(--space-4)
 }
 
@@ -430,7 +430,9 @@ p:last-child {
   align-items: center;
   gap: var(--space-3);
   text-decoration: none;
-  flex-shrink: 0
+  flex-shrink: 0;
+  height: 100%;
+  line-height: 0;
 }
 
 .navbar-logo {
@@ -462,6 +464,33 @@ p:last-child {
   color: var(--text-muted);
   letter-spacing: 0.05em;
   text-transform: uppercase
+}
+
+.navbar-logo-img {
+  height: 100px;
+  max-height: 100%;
+  max-width: 300px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform var(--transition-fast), filter var(--transition-base);
+}
+
+[data-theme="dark"] .navbar-logo-img {
+  filter: brightness(1.2) sepia(0.8) hue-rotate(-15deg) saturate(4) drop-shadow(0 0 4px rgba(255, 215, 0, 0.2));
+}
+
+.navbar-brand:hover .navbar-logo-img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1023px) {
+  .navbar-inner {
+    height: 70px;
+  }
+  .navbar-logo-img {
+    height: 50px;
+  }
 }
 
 .navbar-nav {
@@ -2139,15 +2168,31 @@ p:last-child {
    APP-STYLE DASHBOARD (FULL WIDTH)
    ============================================================ */
 .dashboard-body {
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   background: var(--surface-secondary);
+}
+
+.mobile-top-bar {
+  display: none;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 95;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .app-layout {
   display: flex;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .app-sidebar {
@@ -2160,6 +2205,7 @@ p:last-child {
   flex-shrink: 0;
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.02);
   z-index: 100;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-content {
@@ -2288,55 +2334,92 @@ p:last-child {
 }
 
 @media (max-width: 1023px) {
-  .app-layout {
-    flex-direction: column;
-  }
-
-  .app-sidebar {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--surface-border);
-    padding: var(--space-4);
-  }
-
-  .app-content {
-    padding: var(--space-4);
-  }
-
-  .sidebar-nav {
-    flex-direction: row;
-    overflow-x: auto;
-  }
-
-  .sidebar-nav .nav-link {
-    white-space: nowrap;
-    padding: var(--space-3) var(--space-4);
-  }
-
   .dashboard-body {
     overflow: auto;
     height: auto;
   }
 
-  .dashboard-container {
-    flex-direction: column
+  .mobile-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background: var(--surface-card);
+    border-bottom: 1px solid var(--surface-border);
+    padding: 0 var(--space-4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    box-shadow: var(--nav-shadow);
   }
 
-  .dashboard-sidebar {
-    width: 100% !important;
-    position: static;
-    margin-bottom: var(--space-6)
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 100;
+    padding-top: var(--space-8);
+  }
+
+  .sidebar-open .app-sidebar {
+    transform: translateX(0);
+  }
+
+  .sidebar-open .sidebar-overlay {
+    display: block;
+    opacity: 1;
+  }
+
+  .app-content {
+    padding: 80px var(--space-4) var(--space-8);
+    width: 100%;
   }
 
   .sidebar-nav {
-    flex-direction: row !important;
-    overflow-x: auto;
-    padding-bottom: var(--space-2)
+    flex-direction: column !important;
+    overflow-x: visible;
   }
 
   .sidebar-nav .nav-link {
-    white-space: nowrap
+    padding: var(--space-4) var(--space-5);
+  }
+
+  /* Adjust stats cards for mobile */
+  .app-content h1 {
+    font-size: 2rem !important;
   }
 }
 

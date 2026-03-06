@@ -444,6 +444,29 @@ function initSidebarNav() {
       });
     });
   });
+
+  // Mobile Toggle Logic
+  const menuToggle = document.getElementById('menu-toggle');
+  const overlay = document.getElementById('sidebar-overlay');
+  const body = document.body;
+
+  if (menuToggle && overlay) {
+    const toggleSidebar = () => {
+      body.classList.toggle('sidebar-open');
+    };
+
+    menuToggle.addEventListener('click', toggleSidebar);
+    overlay.addEventListener('click', toggleSidebar);
+
+    // Close sidebar when a nav item is clicked (on mobile)
+    document.querySelectorAll('[data-nav-item]').forEach(item => {
+      item.addEventListener('click', () => {
+        if (window.innerWidth < 1024) {
+          body.classList.remove('sidebar-open');
+        }
+      });
+    });
+  }
 }
 
 // ============================================================
