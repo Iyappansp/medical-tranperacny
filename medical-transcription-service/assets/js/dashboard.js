@@ -9,12 +9,12 @@
 // MOCK DATA
 // ============================================================
 const MockJobs = [
-  { id: 'JOB-2025-001', filename: 'patient_consult_dr_smith_01.mp3', duration: '14:32', uploaded: '2025-01-15', status: 'completed', pages: 6, size: '24.3 MB', specialty: 'Cardiology' },
-  { id: 'JOB-2025-002', filename: 'ER_report_afternoon_shift.wav', duration: '08:17', uploaded: '2025-01-16', status: 'processing', pages: null, size: '18.9 MB', specialty: 'Emergency Medicine' },
-  { id: 'JOB-2025-003', filename: 'radiology_chest_xray_notes.m4a', duration: '05:44', uploaded: '2025-01-17', status: 'completed', pages: 3, size: '11.2 MB', specialty: 'Radiology' },
-  { id: 'JOB-2025-004', filename: 'surgery_debrief_2025_01_17.mp3', duration: '22:08', uploaded: '2025-01-17', status: 'pending', pages: null, size: '42.1 MB', specialty: 'Surgery' },
-  { id: 'JOB-2025-005', filename: 'pediatrics_followup_notes.wav', duration: '11:55', uploaded: '2025-01-18', status: 'completed', pages: 5, size: '26.7 MB', specialty: 'Pediatrics' },
-  { id: 'JOB-2025-006', filename: 'oncology_treatment_plan.mp3', duration: '31:40', uploaded: '2025-01-19', status: 'error', pages: null, size: '58.4 MB', specialty: 'Oncology' },
+  { id: 'JOB-2026-001', filename: 'patient_consult_dr_smith_01.mp3', duration: '14:32', uploaded: '2026-01-15', status: 'completed', pages: 6, size: '24.3 MB', specialty: 'Cardiology' },
+  { id: 'JOB-2026-002', filename: 'ER_report_afternoon_shift.wav', duration: '08:17', uploaded: '2026-01-16', status: 'processing', pages: null, size: '18.9 MB', specialty: 'Emergency Medicine' },
+  { id: 'JOB-2026-003', filename: 'radiology_chest_xray_notes.m4a', duration: '05:44', uploaded: '2026-01-17', status: 'completed', pages: 3, size: '11.2 MB', specialty: 'Radiology' },
+  { id: 'JOB-2026-004', filename: 'surgery_debrief_2026_01_17.mp3', duration: '22:08', uploaded: '2026-01-17', status: 'pending', pages: null, size: '42.1 MB', specialty: 'Surgery' },
+  { id: 'JOB-2026-005', filename: 'pediatrics_followup_notes.wav', duration: '11:55', uploaded: '2026-01-18', status: 'completed', pages: 5, size: '26.7 MB', specialty: 'Pediatrics' },
+  { id: 'JOB-2026-006', filename: 'oncology_treatment_plan.mp3', duration: '31:40', uploaded: '2026-01-19', status: 'error', pages: null, size: '58.4 MB', specialty: 'Oncology' },
 ];
 
 // ============================================================
@@ -356,7 +356,7 @@ function initUploadZone() {
       setTimeout(() => {
         DashboardState.uploadQueue.forEach(file => {
           const newJob = {
-            id: 'JOB-2025-' + String(Date.now()).slice(-4),
+            id: 'JOB-2026-' + String(Date.now()).slice(-4),
             filename: file.name,
             duration: '--:--',
             uploaded: new Date().toISOString().split('T')[0],
