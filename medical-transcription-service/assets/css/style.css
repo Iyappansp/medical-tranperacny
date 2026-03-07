@@ -454,6 +454,10 @@ p:last-child {
   line-height: 0;
 }
 
+.footer-brand .navbar-brand {
+  height: auto;
+}
+
 .navbar-logo {
   width: 36px;
   height: 36px;
@@ -1619,7 +1623,7 @@ p:last-child {
 
 .footer-grid {
   display: grid;
-  gap: var(--space-12);
+  gap: var(--space-10);
   margin-bottom: var(--space-16);
 }
 
@@ -1695,18 +1699,24 @@ p:last-child {
 }
 
 .footer-brand {
-  max-width: 320px;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .footer-brand {
+    max-width: 320px;
+  }
 }
 
 .footer-brand .navbar-logo-img {
-  height: 110px;
+  height: 135px;
   margin-bottom: var(--space-6);
   filter: brightness(1.2) grayscale(0.2);
 }
 
 @media (max-width: 767px) {
   .footer-brand .navbar-logo-img {
-    height: 80px;
+    height: 105px;
   }
 }
 
