@@ -147,7 +147,9 @@ function renderJobs() {
     <tr data-job-id="${job.id}">
       <td>
         <div class="flex gap-3 items-center">
-          <div class="file-icon" aria-hidden="true">🎙️</div>
+          <div class="file-icon" aria-hidden="true">
+            <i data-lucide="mic" class="w-5 h-5 text-primary-400"></i>
+          </div>
           <div>
             <div class="job-filename font-ui font-semibold text-sm" style="color:var(--text-primary);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${job.filename}">${job.filename}</div>
             <div class="text-xs text-muted font-ui">${job.id} · ${job.specialty}</div>
@@ -165,11 +167,17 @@ function renderJobs() {
         ? `<button class="btn btn-sm btn-danger" onclick="DashboardActions.retry('${job.id}')" aria-label="Retry job ${job.id}">↺ Retry</button>`
         : `<button class="btn btn-sm btn-ghost" disabled aria-label="Job ${job.status}">···</button>`
     }
-          <button class="btn btn-sm btn-ghost btn-icon" onclick="DashboardActions.viewDetails('${job.id}')" aria-label="View details for ${job.id}">👁</button>
+          <button class="btn btn-sm btn-ghost btn-icon" onclick="DashboardActions.viewDetails('${job.id}')" aria-label="View details for ${job.id}">
+            <i data-lucide="eye" class="w-4 h-4"></i>
+          </button>
         </div>
       </td>
     </tr>
   `).join('');
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 }
 
 // ============================================================
@@ -194,7 +202,9 @@ function showJobModal(job) {
           <h3 id="modal-title" style="font-family:var(--font-ui);font-size:1rem;font-weight:700">Job Details</h3>
           <p class="text-xs text-muted font-ui" style="margin:0">${job.id}</p>
         </div>
-        <button class="btn btn-ghost btn-icon" onclick="document.getElementById('job-modal').remove()" aria-label="Close modal">✕</button>
+        <button class="btn btn-ghost btn-icon" onclick="document.getElementById('job-modal').remove()" aria-label="Close modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
       </div>
       <div class="card-body">
         <dl style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
@@ -222,6 +232,10 @@ function showJobModal(job) {
       </div>
     </div>
   `;
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.remove();
@@ -307,14 +321,16 @@ function initUploadZone() {
     }
 
     uploadList.innerHTML = DashboardState.uploadQueue.map((file, i) => `
-      <div class="upload-item flex items-center gap-3" style="padding:10px;background:var(--surface-secondary);border-radius:8px;margin-top:8px">
-        <span style="font-size:1.25rem" aria-hidden="true">🎵</span>
-        <div style="flex:1;min-width:0">
-          <div class="font-ui text-sm font-semibold" style="color:var(--text-primary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${file.name}</div>
-          <div class="text-xs text-muted font-ui">${formatFileSize(file.size)}</div>
+        <div class="upload-item flex items-center gap-3" style="padding:10px;background:var(--surface-secondary);border-radius:8px;margin-top:8px">
+          <i data-lucide="music" class="w-5 h-5 text-primary-400"></i>
+          <div style="flex:1;min-width:0">
+            <div class="font-ui text-sm font-semibold" style="color:var(--text-primary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${file.name}</div>
+            <div class="text-xs text-muted font-ui">${formatFileSize(file.size)}</div>
+          </div>
+          <button class="btn btn-ghost btn-sm btn-icon" onclick="DashboardState.uploadQueue.splice(${i},1);DashboardActions && renderUploadList && renderUploadList()" aria-label="Remove ${file.name}" style="color:var(--color-error)">
+            <i data-lucide="trash-2" class="w-4 h-4"></i>
+          </button>
         </div>
-        <button class="btn btn-ghost btn-sm btn-icon" onclick="DashboardState.uploadQueue.splice(${i},1);DashboardActions && renderUploadList && renderUploadList()" aria-label="Remove ${file.name}" style="color:var(--color-error)">✕</button>
-      </div>
     `).join('');
 
     // Update submit button
@@ -325,7 +341,10 @@ function initUploadZone() {
   }
 
   // Make renderUploadList accessible globally for inline onclick
-  window.renderUploadList = renderUploadList;
+  window.renderUploadList = () => {
+    renderUploadList();
+    if (window.lucide) window.lucide.createIcons();
+  };
 
   // Drag events
   ['dragenter', 'dragover'].forEach(evt => {
@@ -378,6 +397,7 @@ function initUploadZone() {
         submitBtn.style.display = 'none';
 
         window.Toast?.show('Files uploaded successfully! Jobs queued for transcription.', 'success');
+        if (window.lucide) window.lucide.createIcons();
       }, 2000);
     });
   }
@@ -486,6 +506,7 @@ function initDashboard() {
     initUploadZone();
     initFilters();
     initSidebarNav();
+    if (window.lucide) window.lucide.createIcons();
   }, 1200);
 }
 

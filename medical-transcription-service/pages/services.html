@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/css/dark-mode.css">
   <link rel="stylesheet" href="../assets/css/rtl.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -115,7 +116,7 @@
         <div style="display:grid;gap:48px">
 
           <!-- Clinical Notes -->
-          <div style="display:grid;gap:32px;align-items:center" class="animate-fade-in-up">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 animate-fade-in-up">
             <div>
               <span class="section-eyebrow">01</span>
               <h2 id="clinical-heading">Clinical Notes &amp; Patient Records</h2>
@@ -123,32 +124,36 @@
                 discharge summaries. Our transcriptionists are trained in medical terminology across all major
                 specialties.</p>
               <ul class="feature-list" aria-label="Clinical notes features">
-                <li><span class="check" aria-hidden="true">✓</span>SOAP notes, H&amp;P, progress notes</li>
-                <li><span class="check" aria-hidden="true">✓</span>Discharge summaries and referral letters</li>
-                <li><span class="check" aria-hidden="true">✓</span>Proper medical abbreviation expansion</li>
-                <li><span class="check" aria-hidden="true">✓</span>Custom templates matching your practice style</li>
-                <li><span class="check" aria-hidden="true">✓</span>Multi-speaker identification</li>
-                <li><span class="check" aria-hidden="true">✓</span>Verbatim or clean-read formats</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>SOAP notes, H&amp;P, progress notes</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>Discharge summaries and referral letters</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>Proper medical abbreviation expansion</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>Custom templates matching your practice style</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>Multi-speaker identification</li>
               </ul>
               <a href="dashboard.html" class="btn btn-primary" style="margin-top:24px">Start Uploading</a>
+            </div>
+            <div data-animate>
+               <img src="../assets/images/ai_medical_transcription_interface_1772732244108.png" alt="Clinical Documentation" class="rounded-3xl shadow-xl">
             </div>
           </div>
 
           <hr style="border:none;border-top:1px solid var(--surface-border)">
 
           <!-- Radiology -->
-          <div style="display:grid;gap:32px;align-items:center" class="animate-fade-in-up">
-            <div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 animate-fade-in-up">
+            <div class="order-2 lg:order-1" data-animate>
+               <img src="../assets/images/radiology_icon.png" alt="Radiology Reports" class="rounded-3xl shadow-xl w-full object-cover" style="height:400px">
+            </div>
+            <div class="order-1 lg:order-2">
               <span class="section-eyebrow">02</span>
               <h2>Radiology &amp; Imaging Reports</h2>
               <p>Specialized transcriptionists with radiology training handle CT scans, MRI reports, ultrasound
                 findings, X-ray interpretations, and nuclear medicine reports with precision.</p>
               <ul class="feature-list">
-                <li><span class="check" aria-hidden="true">✓</span>CT, MRI, PET, and ultrasound reports</li>
-                <li><span class="check" aria-hidden="true">✓</span>Interventional radiology procedures</li>
-                <li><span class="check" aria-hidden="true">✓</span>BIRADS, PIRADS, and standard scoring systems</li>
-                <li><span class="check" aria-hidden="true">✓</span>Integration with PACS systems</li>
-                <li><span class="check" aria-hidden="true">✓</span>Structured reporting formats</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>CT, MRI, PET, and ultrasound reports</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>Interventional radiology procedures</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>BIRADS, PIRADS, and standard scoring systems</li>
+                <li><i data-lucide="check-circle" class="w-5 h-5 text-success inline-block mr-2"></i>Integration with PACS systems</li>
               </ul>
             </div>
           </div>
@@ -361,6 +366,11 @@
   <button data-back-to-top aria-label="Back to top"
     style="position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--color-primary-700);color:white;border:none;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s;z-index:500;cursor:pointer">↑</button>
   <script src="../assets/js/main.js"></script>
+  <script>
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
 </body>
 
 </html>

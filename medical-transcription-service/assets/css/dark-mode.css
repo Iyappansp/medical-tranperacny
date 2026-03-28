@@ -6,8 +6,8 @@
 
 /* Dashboard Specific Overrides */
 [data-theme="dark"] .app-sidebar {
-  background: #0f172a;
-  border-right-color: #1e293b;
+  background: #0a0a0a;
+  border-right-color: #171717;
 }
 
 [data-theme="dark"] .sidebar-nav .nav-link {
@@ -20,29 +20,29 @@
 }
 
 [data-theme="dark"] .dash-top-bar {
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #171717;
   padding-bottom: var(--space-4);
   margin-bottom: var(--space-8);
 }
 
 [data-theme="dark"] .card {
-  background: #1e293b;
-  border-color: #334155;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  background: #171717;
+  border-color: #262626;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] .upload-zone {
-  background: rgba(30, 41, 59, 0.5);
-  border-color: #334155;
+  background: rgba(23, 23, 23, 0.5);
+  border-color: #262626;
 }
 
 [data-theme="dark"] .upload-zone:hover {
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(23, 23, 23, 0.8);
   border-color: var(--color-primary-400);
 }
 
 [data-theme="dark"] .data-table thead tr {
-  background: #0f172a;
+  background: #0a0a0a;
 }
 
 [data-theme="dark"] .data-table th {
@@ -72,8 +72,8 @@
 
 /* Form Elements */
 [data-theme="dark"] .form-input {
-  background: #0f172a;
-  border-color: #334155;
+  background: #0a0a0a;
+  border-color: #262626;
   color: #f1f5f9;
 }
 

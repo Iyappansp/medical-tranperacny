@@ -214,47 +214,49 @@
 
         <!-- FAQ -->
         <section class="section" style="background:var(--surface-secondary)" aria-labelledby="faq-heading">
-            <div class="container" style="max-width:800px">
+            <div class="container">
                 <div class="section-header">
                     <h2 id="faq-heading">Security FAQ</h2>
                     <p>Common questions about how we handle and protect your clinic's data.</p>
                 </div>
-                <div class="space-y-4">
-                    <details class="card p-0 overflow-hidden">
-                        <summary
-                            class="p-6 font-bold cursor-pointer hover:bg-surface-primary transition-colors flex justify-between items-center">
-                            <span>Is my data stored outside the United States?</span>
-                            <span class="text-primary-700 text-xl">+</span>
-                        </summary>
-                        <div class="p-6 pt-0 border-t border-surface-border">
-                            <p>No. All MedTranscribe data, including backups and transient processing files, is stored
-                                exclusively on HIPAA-compliant servers located within the continental United States.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div data-animate>
+                        <img src="../assets/images/faq_support.png" alt="Medical Support Representative" class="rounded-3xl shadow-xl">
+                    </div>
+                    <div>
+                        <div class="faq-item" data-faq-item role="listitem">
+                            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-1">
+                                Is my data stored outside the United States?
+                                <span class="faq-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq-1" role="region">
+                                <p>No. All MedTranscribe data, including backups and transient processing files, is stored
+                                    exclusively on HIPAA-compliant servers located within the continental United States.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="card p-0 overflow-hidden">
-                        <summary
-                            class="p-6 font-bold cursor-pointer hover:bg-surface-primary transition-colors flex justify-between items-center">
-                            <span>Do you use AI models that 'learn' from my data?</span>
-                            <span class="text-primary-700 text-xl">+</span>
-                        </summary>
-                        <div class="p-6 pt-0 border-t border-surface-border">
-                            <p>While we use AI to assist our transcriptionists, we use private, siloed models. We DO NOT
-                                use your data to train public models or any system that could potentially leak
-                                information across client boundaries.</p>
+                        <div class="faq-item" data-faq-item role="listitem">
+                            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-2">
+                                Do you use AI models that 'learn' from my data?
+                                <span class="faq-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq-2" role="region">
+                                <p>While we use AI to assist our transcriptionists, we use private, siloed models. We DO NOT
+                                    use your data to train public models or any system that could potentially leak
+                                    information across client boundaries.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="card p-0 overflow-hidden">
-                        <summary
-                            class="p-6 font-bold cursor-pointer hover:bg-surface-primary transition-colors flex justify-between items-center">
-                            <span>How do I get a copy of your SOC 2 report?</span>
-                            <span class="text-primary-700 text-xl">+</span>
-                        </summary>
-                        <div class="p-6 pt-0 border-t border-surface-border">
-                            <p>Our current SOC 2 Type II report is available to prospective and current enterprise
-                                clients upon request and execution of an NDA. Please contact <a href="contact.html"
-                                    class="text-primary-color">security@medtranscribe.com</a>.</p>
+                        <div class="faq-item" data-faq-item role="listitem">
+                            <button class="faq-btn" data-faq-btn aria-expanded="false" aria-controls="faq-3">
+                                How do I get a copy of your SOC 2 report?
+                                <span class="faq-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq-3" role="region">
+                                <p>Our current SOC 2 Type II report is available to prospective and current enterprise
+                                    clients upon request and execution of an NDA. Please contact <a href="contact.html"
+                                        class="text-primary-color">security@medtranscribe.com</a>.</p>
+                            </div>
                         </div>
-                    </details>
+                    </div>
                 </div>
             </div>
         </section>
