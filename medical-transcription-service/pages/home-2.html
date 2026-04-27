@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="MedTranscribe — Specialized transcription for specialty clinics, telehealth, and private practices. Accurate, HIPAA-compliant, and fast.">
-    <title>Specialty Transcription — MedTranscribe Medical Transcription</title>
+    <title>Specialty Transcription — TranscribeRx Medical Transcription</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,8 +26,8 @@
     <header role="banner">
         <nav class="navbar" aria-label="Main navigation">
             <div class="container navbar-inner">
-                <a href="../index.html" class="navbar-brand" aria-label="MedTranscribe Home">
-                    <img src="../assets/logo.png" alt="MedTranscribe Logo" class="navbar-logo-img">
+                <a href="../index.html" class="navbar-brand" aria-label="TranscribeRx Home">
+                    <img src="../assets/logo.png" alt="TranscribeRx Logo" class="navbar-logo-img">
                 </a>
                 <div class="navbar-nav" role="list">
                     <a href="../index.html" class="nav-link">Home</a>
@@ -70,57 +70,41 @@
 
     <main id="main-content">
         <!-- HERO -->
-        <section class="hero relative overflow-hidden flex items-center"
-            style="min-height: 85vh; background: var(--surface-bg); padding-top: 100px;" aria-labelledby="hero-heading">
-            <div class="absolute inset-0 opacity-10 pointer-events-none"
-                style="background-image: radial-gradient(var(--color-primary-400) 1px, transparent 1px); background-size: 32px 32px;">
+        <section class="hero min-h-[85vh] pt-[100px]" aria-labelledby="hero-heading">
+            <div class="hero-bg-wrapper">
+                <img src="../assets/images/medical_tech_ai_transcription_1772691095520.png" alt="" class="hero-bg-image" style="filter: hue-rotate(45deg) brightness(0.3) blur(4px);">
+                <div class="hero-overlay"></div>
             </div>
-            <div class="container relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="animate-fade-in-up">
-                        <div class="tech-badge mb-4">🏥 Optimized for Specialty Clinics</div>
-            <h1 id="hero-heading" class="hero-title">
-                            Next-Gen Transcription <br><span class="text-primary-color">Specialty Data Mining</span>
-                        </h1>
-                        <p class="text-lg mb-8" style="max-width: 540px;">
-                            Don't just transcribe—analyze. Our specialty-specific platform extracts clinical insights from your dictations, streamlining specialized patient management with structured data integration.
-                        </p>
-                        <div class="flex gap-4 flex-wrap mb-12">
-                            <a href="signup.html" class="btn btn-primary btn-lg px-8 shadow-lg shadow-primary-900/20">Free Clinical Audit</a>
-                            <a href="services.html" class="btn btn-secondary btn-lg font-semibold">Case Studies</a>
-                        </div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                            <div>
-                                <div class="text-3xl font-bold text-primary-color" data-counter="99.9" data-counter-suffix="%">99.9%</div>
-                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Precision</div>
-                            </div>
-                            <div>
-                                <div class="text-3xl font-bold text-primary-color" data-counter="4" data-counter-suffix="hr">4hr</div>
-                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Rush Option</div>
-                            </div>
-                            <div>
-                                <div class="text-3xl font-bold text-primary-color">AI+H</div>
-                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Hybrid Intel</div>
-                            </div>
-                            <div>
-                                <div class="text-3xl font-bold text-primary-color">HL7</div>
-                                <div class="text-xs uppercase tracking-widest text-muted font-bold">Standards</div>
-                            </div>
-                        </div>
+            <div class="container relative z-10 py-20">
+                <div class="max-w-3xl animate-fade-in-up">
+                    <div class="tech-badge mb-6">🏥 Optimized for Specialty Clinics</div>
+                    <h1 id="hero-heading" class="hero-title mb-6" style="color:white">
+                        Next-Gen Transcription <br><span class="text-primary-color">Specialty Data Mining</span>
+                    </h1>
+                    <p class="text-xl mb-10 text-gray-300">
+                        Don't just transcribe—analyze. Our specialty-specific platform extracts clinical insights from your dictations, streamlining specialized patient management with structured data integration.
+                    </p>
+                    <div class="flex gap-4 flex-wrap mb-16">
+                        <a href="signup.html" class="btn btn-primary btn-lg px-10">Free Clinical Audit</a>
+                        <a href="services.html" class="btn btn-outline-white btn-lg px-10">Case Studies</a>
                     </div>
-                    <div class="relative animate-fade-in-up" style="animation-delay: 0.3s">
-                        <div class="glass p-8 rounded-3xl relative z-20 border border-white/20 shadow-2xl">
-                            <div class="tech-img-container rounded-2xl overflow-hidden shadow-inner">
-                                <img src="../assets/images/medical_tech_ai_transcription_1772691095520.png"
-                                    alt="Specialty Analytics Visualization" class="w-full"
-                                    style="filter: hue-rotate(45deg);">
-                            </div>
-                            <!-- Floating Data Points -->
-                            <div class="absolute -top-4 -right-4 glass p-4 rounded-xl shadow-xl animate-pulse delay-1000">
-                                <span class="text-xs font-bold text-primary-color">Structured Extraction Active</span>
-                            </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+                        <div>
+                            <div class="text-3xl font-bold text-primary-color">99.9%</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-400 font-bold mt-1">Precision</div>
                         </div>
-                        <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-primary-500/10 blur-3xl rounded-full"></div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary-color">4hr</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-400 font-bold mt-1">Rush Option</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary-color">AI+H</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-400 font-bold mt-1">Hybrid Intel</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary-color">HL7</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-400 font-bold mt-1">Standards</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,8 +327,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="../index.html" class="navbar-brand" aria-label="MedTranscribe Home">
-            <img src="../assets/logo.png" alt="MedTranscribe Logo" class="navbar-logo-img">
+          <a href="../index.html" class="navbar-brand" aria-label="TranscribeRx Home">
+            <img src="../assets/logo.png" alt="TranscribeRx Logo" class="navbar-logo-img">
           </a>
           <p>HIPAA-compliant medical transcription services trusted by 500+ healthcare providers across the United States. Engineered for precision and speed.</p>
           <div class="footer-social">
@@ -392,7 +376,7 @@
       </div>
       <div class="footer-bottom">
         <div class="footer-copyright">
-          <span>© 2026 MedTranscribe Inc. All rights reserved.</span>
+          <span>© 2026 TranscribeRx Inc. All rights reserved.</span>
         </div>
         <div class="footer-legal-badges">
           <span class="footer-badge">HIPAA Compliant</span>

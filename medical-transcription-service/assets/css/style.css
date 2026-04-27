@@ -131,10 +131,49 @@ video {
   max-width: 100%
 }
 
-a {
-  color: var(--color-primary-600);
-  text-decoration: none
+/* HERO */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: var(--surface-bg);
+  transition: background-color var(--transition-slow);
 }
+
+.hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3) blur(4px);
+  opacity: 0.6;
+  transition: filter var(--transition-slow), opacity var(--transition-slow);
+}
+
+[data-theme="dark"] .hero-bg-image {
+  opacity: 0.4;
+  filter: brightness(0.2) blur(6px);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.9) 100%);
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 10;
+}
+
 
 a:hover {
   text-decoration: underline
@@ -509,19 +548,26 @@ p:last-child {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .navbar-logo-img {
-    max-width: 200px;
-    height: 100px;
+    max-width: 180px;
+    height: 90px;
   }
   .navbar-inner {
-    height: 120px;
-    gap: var(--space-4);
+    height: 110px;
+    gap: 12px;
+  }
+  .navbar-nav {
+    gap: 4px;
   }
   .nav-link {
-    padding-inline: 10px;
-    font-size: 0.875rem;
+    padding-inline: 8px;
+    font-size: 0.8125rem;
   }
   .navbar-actions {
-    gap: 8px;
+    gap: 6px;
+  }
+  .navbar-actions .btn {
+    padding: 6px 12px;
+    font-size: 0.8125rem;
   }
 }
 
