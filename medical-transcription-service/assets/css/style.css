@@ -1114,7 +1114,7 @@ p:last-child {
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 7vw, 4.5rem);
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.04em;
   color: var(--text-primary);
@@ -1130,6 +1130,10 @@ p:last-child {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding-right: 0.1em;
+  margin-right: -0.05em;
 }
 
 [data-theme="dark"] .hero-title em,
@@ -1138,6 +1142,10 @@ p:last-child {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding-right: 0.1em;
+  margin-right: -0.05em;
 }
 
 .hero p {
