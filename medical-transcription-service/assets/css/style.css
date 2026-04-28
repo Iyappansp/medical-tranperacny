@@ -281,7 +281,7 @@ p:last-child {
   }
 }
 
-@media(min-width:1024px) {
+@media(min-width:1200px) {
   .container {
     padding-inline: var(--space-8)
   }
@@ -548,26 +548,32 @@ p:last-child {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .navbar-logo-img {
-    max-width: 180px;
-    height: 90px;
+    max-width: 140px;
+    height: 60px;
   }
   .navbar-inner {
-    height: 110px;
-    gap: 12px;
-  }
-  .navbar-nav {
+    height: 80px;
     gap: 4px;
   }
+  .navbar-nav {
+    gap: 0;
+  }
   .nav-link {
-    padding-inline: 8px;
-    font-size: 0.8125rem;
+    padding-inline: 4px;
+    font-size: 0.75rem;
   }
   .navbar-actions {
-    gap: 6px;
+    gap: 4px;
   }
   .navbar-actions .btn {
-    padding: 6px 12px;
-    font-size: 0.8125rem;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    min-height: 32px;
+  }
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
   }
 }
 
